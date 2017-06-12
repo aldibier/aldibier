@@ -1,0 +1,21 @@
+uuid: 4b20a811-fc06-455e-8a43-52b983c85211
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.user.profile_edad
+  module:
+    - text
+    - user
+id: user.user.profile_edad
+field_name: profile_edad
+entity_type: user
+bundle: user
+label: Edad
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

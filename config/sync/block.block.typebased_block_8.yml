@@ -1,0 +1,25 @@
+uuid: a74bd86f-1a69-4e4b-86e5-6eddd806cabd
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:075df4f6-9cd9-4096-a46f-cd94630ed2bb'
+  module:
+    - block_content
+  theme:
+    - typebased
+id: typebased_block_8
+theme: typebased
+region: content
+weight: -9
+provider: null
+plugin: 'block_content:075df4f6-9cd9-4096-a46f-cd94630ed2bb'
+settings:
+  id: 'block_content:075df4f6-9cd9-4096-a46f-cd94630ed2bb'
+  label: ''
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

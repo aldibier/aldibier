@@ -1,0 +1,20 @@
+uuid: 9e5c07fb-1854-48a1-b332-31821c81e4fd
+langcode: es
+status: true
+dependencies:
+  module:
+    - user
+  theme:
+    - interactive_media
+id: interactive_media_user_login
+theme: interactive_media
+region: sidebar_first
+weight: 0
+provider: null
+plugin: user_login_block
+settings:
+  id: user_login_block
+  label: ''
+  provider: user
+  label_display: '0'
+visibility: {  }

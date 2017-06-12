@@ -1,0 +1,8 @@
+uuid: 4d046dea-52c4-4b11-98b3-2ebb94183c4b
+langcode: es
+status: true
+dependencies: {  }
+id: navigation
+label: Navegación
+description: 'El menú de navegación es proporcionado por Drupal y es el principal menú interactivo para cualquier sitio. Normalmente es el único menú que contiene enlaces personalizados para usuarios autenticados y a menudo no es visible para usuarios anónimos.'
+locked: false

@@ -1,0 +1,24 @@
+uuid: 7836e2d9-71e4-48d4-bdbf-9fb7d17af692
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.who_s_new
+  module:
+    - views
+  theme:
+    - rootcandy
+id: rootcandy_user_new
+theme: rootcandy
+region: content
+weight: -1
+provider: null
+plugin: 'views_block:who_s_new-block_1'
+settings:
+  id: 'views_block:who_s_new-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: '5'
+visibility: {  }

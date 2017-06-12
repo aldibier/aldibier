@@ -1,0 +1,18 @@
+uuid: 89d7067d-6bde-46cd-8cfe-835813d2e50b
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.story
+id: node.story.title
+field_name: title
+entity_type: node
+bundle: story
+label: Título
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,20 @@
+uuid: 4d18946d-12f0-443d-9be2-43a0e978b915
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - addari
+id: addari_system_powered-by
+theme: addari
+region: footer
+weight: -7
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: ''
+  provider: system
+  label_display: '0'
+visibility: {  }

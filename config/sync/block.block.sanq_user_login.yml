@@ -1,0 +1,20 @@
+uuid: 0b1e21ea-8d6c-49ab-9fe5-4e2b8da9eec0
+langcode: es
+status: true
+dependencies:
+  module:
+    - user
+  theme:
+    - sanq
+id: sanq_user_login
+theme: sanq
+region: sidebar_second
+weight: -6
+provider: null
+plugin: user_login_block
+settings:
+  id: user_login_block
+  label: ''
+  provider: user
+  label_display: '0'
+visibility: {  }

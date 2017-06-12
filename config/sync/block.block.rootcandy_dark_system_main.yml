@@ -1,0 +1,20 @@
+uuid: da2ce674-f090-4ad7-92a8-3cd64163d984
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - rootcandy_dark
+id: rootcandy_dark_system_main
+theme: rootcandy_dark
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: ''
+  provider: system
+  label_display: '0'
+visibility: {  }

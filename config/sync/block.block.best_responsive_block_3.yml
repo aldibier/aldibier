@@ -1,0 +1,25 @@
+uuid: aceed2a2-7fb4-49b1-823a-18dab5078002
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:1058e977-8f64-4cd2-9bd9-9b4681a8b902'
+  module:
+    - block_content
+  theme:
+    - best_responsive
+id: best_responsive_block_3
+theme: best_responsive
+region: sidebar_first
+weight: -10
+provider: null
+plugin: 'block_content:1058e977-8f64-4cd2-9bd9-9b4681a8b902'
+settings:
+  id: 'block_content:1058e977-8f64-4cd2-9bd9-9b4681a8b902'
+  label: ''
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

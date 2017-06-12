@@ -1,0 +1,25 @@
+uuid: 723287e9-2764-4956-aa61-db3fda285082
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:075df4f6-9cd9-4096-a46f-cd94630ed2bb'
+  module:
+    - block_content
+  theme:
+    - lexi_responsive_theme
+id: lexi_responsive_theme_block_8
+theme: lexi_responsive_theme
+region: sidebar_first
+weight: -8
+provider: null
+plugin: 'block_content:075df4f6-9cd9-4096-a46f-cd94630ed2bb'
+settings:
+  id: 'block_content:075df4f6-9cd9-4096-a46f-cd94630ed2bb'
+  label: ''
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

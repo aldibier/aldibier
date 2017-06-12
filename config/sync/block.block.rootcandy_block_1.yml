@@ -1,0 +1,25 @@
+uuid: 8d0aa935-de37-4af4-b089-a0cae284986a
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:a312baba-4e2e-4986-8d6a-c252b3bf4156'
+  module:
+    - block_content
+  theme:
+    - rootcandy
+id: rootcandy_block_1
+theme: rootcandy
+region: content
+weight: -2
+provider: null
+plugin: 'block_content:a312baba-4e2e-4986-8d6a-c252b3bf4156'
+settings:
+  id: 'block_content:a312baba-4e2e-4986-8d6a-c252b3bf4156'
+  label: ''
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

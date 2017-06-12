@@ -1,0 +1,32 @@
+uuid: ef4e5f8a-1211-4be7-a974-b0496270c1bc
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.rss
+    - field.field.node.blog.body
+    - field.field.node.blog.field_archivo
+    - field.field.node.blog.field_tema
+    - field.field.node.blog.upload
+    - node.type.blog
+  module:
+    - file
+    - user
+id: node.blog.rss
+targetEntityType: node
+bundle: blog
+mode: rss
+content:
+  links:
+    weight: 100
+  upload:
+    label: hidden
+    weight: 0
+    type: file_table
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  body: true
+  field_archivo: true
+  field_tema: true
+  langcode: true

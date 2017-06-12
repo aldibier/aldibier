@@ -1,0 +1,35 @@
+uuid: f663a087-0bb5-4db4-a95b-726efecb9a7d
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.user.user.profile_edad
+    - field.field.user.user.user_picture
+    - image.style.thumbnail
+  module:
+    - image
+    - user
+_core:
+  default_config_hash: LLAieeozVsoZDb-2PbFxRJpQqnKmpR7-4OoRJnduz-U
+id: user.user.default
+targetEntityType: user
+bundle: user
+mode: default
+content:
+  account:
+    weight: -10
+  contact:
+    weight: 5
+  language:
+    weight: 0
+  timezone:
+    weight: 6
+  user_picture:
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    type: image_image
+    weight: 7
+    third_party_settings: {  }
+hidden:
+  profile_edad: true

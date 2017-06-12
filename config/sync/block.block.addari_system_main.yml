@@ -1,0 +1,20 @@
+uuid: de22db5c-a698-4975-8158-846c0ccc460a
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - addari
+id: addari_system_main
+theme: addari
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: ''
+  provider: system
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,20 @@
+uuid: 2a908a7b-a8cb-468b-8da8-6b939cb1f72f
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - best_responsive
+id: best_responsive_system_powered-by
+theme: best_responsive
+region: content
+weight: -8
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: ''
+  provider: system
+  label_display: '0'
+visibility: {  }

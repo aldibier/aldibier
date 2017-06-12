@@ -1,0 +1,20 @@
+uuid: e243be25-41b8-46d6-857d-e60ef7a5356f
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - agua
+id: agua_system_main
+theme: agua
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: ''
+  provider: system
+  label_display: '0'
+visibility: {  }

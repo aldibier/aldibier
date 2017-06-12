@@ -1,0 +1,22 @@
+uuid: 47bab592-8b14-4e0b-8fe8-165f9d10ea55
+langcode: es
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - zircon
+_core:
+  default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
+id: zircon_messages
+theme: zircon
+region: header
+weight: -6
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Mensajes de estado'
+  provider: system
+  label_display: '0'
+visibility: {  }

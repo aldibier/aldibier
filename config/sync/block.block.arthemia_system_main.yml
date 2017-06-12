@@ -1,0 +1,20 @@
+uuid: e08f31d2-ceec-4e04-80d1-4f85ae8eafb9
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - arthemia
+id: arthemia_system_main
+theme: arthemia
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: ''
+  provider: system
+  label_display: '0'
+visibility: {  }

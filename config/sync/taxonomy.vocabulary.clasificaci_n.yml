@@ -1,0 +1,9 @@
+uuid: 9f735ce4-76d8-43f2-a422-8e2e7fcc6b77
+langcode: es
+status: true
+dependencies: {  }
+name: Clasificación
+vid: clasificaci_n
+description: 'Clasificación de los artículos publicados en el Blog'
+hierarchy: 0
+weight: 0

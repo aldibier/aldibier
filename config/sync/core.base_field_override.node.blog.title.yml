@@ -1,0 +1,18 @@
+uuid: bff46133-cd3f-4073-9874-1f2d8df2b703
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.blog
+id: node.blog.title
+field_name: title
+entity_type: node
+bundle: blog
+label: Título
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

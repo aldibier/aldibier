@@ -1,0 +1,11 @@
+uuid: ab01ff7b-5a98-4687-b379-03f34c598e36
+langcode: es
+status: true
+dependencies: {  }
+name: 'Node Block'
+type: node_block
+description: ''
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

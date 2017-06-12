@@ -1,0 +1,20 @@
+uuid: 800d8b5e-320c-4d3c-8992-a8004c2a781e
+langcode: es
+status: true
+dependencies:
+  module:
+    - user
+  theme:
+    - admire_gray
+id: admire_gray_user_login
+theme: admire_gray
+region: sidebar_second
+weight: -6
+provider: null
+plugin: user_login_block
+settings:
+  id: user_login_block
+  label: ''
+  provider: user
+  label_display: '0'
+visibility: {  }

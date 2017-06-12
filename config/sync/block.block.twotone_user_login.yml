@@ -1,0 +1,20 @@
+uuid: 381b278f-9b4b-4004-96c8-d2c7a14d60d2
+langcode: es
+status: true
+dependencies:
+  module:
+    - user
+  theme:
+    - twotone
+id: twotone_user_login
+theme: twotone
+region: sidebar_second
+weight: -7
+provider: null
+plugin: user_login_block
+settings:
+  id: user_login_block
+  label: ''
+  provider: user
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,13 @@
+uuid: ad681128-1da2-4209-a9c4-367022ecf5e3
+langcode: es
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: i4OVV5qrD7abstl4SKS8v5Ee7PuxrL548iZVSty1HRg
+name: Artículo
+type: article
+description: 'Utilice <em>artículos</em> para contenido que dependa de fecha y hora, como ser noticias, artículos de prensa o entradas de blogs.'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true

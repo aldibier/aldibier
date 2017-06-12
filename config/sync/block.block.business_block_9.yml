@@ -1,0 +1,25 @@
+uuid: d36aa3c3-855d-415e-9470-5e0f9b3a013c
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:9165a62b-710c-4a03-b9b3-330222621545'
+  module:
+    - block_content
+  theme:
+    - business
+id: business_block_9
+theme: business
+region: header
+weight: -15
+provider: null
+plugin: 'block_content:9165a62b-710c-4a03-b9b3-330222621545'
+settings:
+  id: 'block_content:9165a62b-710c-4a03-b9b3-330222621545'
+  label: ''
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

@@ -1,0 +1,25 @@
+uuid: 963263c0-3d3f-4b29-a864-6b4ae95abd07
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.book.body
+    - node.type.book
+  module:
+    - text
+    - user
+id: node.book.default
+targetEntityType: node
+bundle: book
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    weight: 102
+  links:
+    weight: 100
+hidden:
+  langcode: true

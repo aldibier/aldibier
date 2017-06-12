@@ -1,0 +1,20 @@
+uuid: 832dd943-c1ae-42d3-b27d-7ddd177df5d7
+langcode: es
+status: true
+dependencies:
+  theme:
+    - rootcandy
+id: rootcandy_aggregator_feed-1
+theme: rootcandy
+region: content
+weight: -10
+provider: null
+plugin: aggregator_feed_block
+settings:
+  id: broken
+  label: ''
+  provider: core
+  label_display: '0'
+  block_count: '5'
+  feed: '1'
+visibility: {  }

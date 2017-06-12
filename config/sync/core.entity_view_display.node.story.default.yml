@@ -1,0 +1,25 @@
+uuid: da7ca278-22ae-48f0-9e15-f3b8aebb7ae8
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.story.body
+    - node.type.story
+  module:
+    - text
+    - user
+id: node.story.default
+targetEntityType: node
+bundle: story
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    weight: 102
+  links:
+    weight: 100
+hidden:
+  langcode: true

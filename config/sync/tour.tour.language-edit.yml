@@ -1,0 +1,51 @@
+uuid: 8987cbdb-d762-4945-9c25-37ebe30b47ad
+langcode: es
+status: true
+dependencies:
+  module:
+    - language
+_core:
+  default_config_hash: eYyOjXVghEin1Ed7t7vr9X0dSn018_zeZegu2Ao-j4Q
+id: language-edit
+label: 'Editando idiomas'
+module: language
+routes:
+  -
+    route_name: entity.configurable_language.edit_form
+tips:
+  language-edit-overview:
+    id: language-edit-overview
+    plugin: text
+    label: 'Editando idiomas'
+    body: '<p>Esta página ofrece la posibilidad de editar un idioma en su sitio, incluyendo idiomas personalizados</p>'
+    weight: 1
+  language-edit-langcode:
+    id: language-edit-langcode
+    plugin: text
+    label: 'Código de idioma'
+    body: '<p>No puedes cambiar el código de un idioma en el sitio, ya que se usa en el sistema para asignar el idioma.</p>'
+    weight: 2
+    attributes:
+      data-id: edit-langcode-view
+  language-edit-label:
+    id: language-edit-label
+    plugin: text
+    label: 'Nombre del idioma'
+    body: '<p>El nombre del idioma es utilizado por todo el sitio para todos los usuarios y está escrito en inglés. Los nombres de idiomas incorporados pueden ser traducidos usando el módulo Interface Translation y los nombres de idiomas tanto incorporados como personalizados pueden ser traducidos usando el módulo Configuration Translation.</p>'
+    weight: 3
+    attributes:
+      data-id: edit-label
+  language-edit-direction:
+    id: language-edit-direction
+    plugin: text
+    label: 'Dirección del idioma'
+    body: '<p>Escoja si el idioma es un idioma de "De izquierda a derecha" o de "De derecha a izquierda".</p><p>Fijese que no todos los temas soportan diseños de "De derecha a izquierda", por lo que debe probarlos antes si piensa usarlos.</p>'
+    weight: 4
+    attributes:
+      data-id: edit-direction--wrapper--description
+  language-edit-continue:
+    id: language-edit-continue
+    plugin: text
+    label: Continuando
+    body: '<p>Ahora que tiene un resumen de la característica "Editar idioma", puede continuar con: <ul><li>Editar un idioma</li><li><a href="[site:url]/admin/config/regional/language">Ver idiomas configurados</a></li></ul></p>'
+    weight: 5

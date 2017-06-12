@@ -1,0 +1,14 @@
+uuid: 106267cd-5656-4e6b-956c-963c675afb42
+langcode: es
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: c4zaT5cyPxuTXI6JOWt3qRtMvICT9tHB6d9a5VG-CmQ
+id: feedback
+label: 'Retroalimentación del sitio web'
+recipients:
+  - me@aldibier.com
+reply: ''
+weight: 0
+message: 'Your message has been sent.'
+redirect: ''

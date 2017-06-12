@@ -1,0 +1,24 @@
+uuid: 7755ce64-2390-4e89-b476-418da65ebd1c
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.comments_recent
+  module:
+    - views
+  theme:
+    - zircon
+id: zircon_metro_zymphonies_theme_comment_recent
+theme: zircon
+region: content
+weight: -3
+provider: null
+plugin: 'views_block:comments_recent-block_1'
+settings:
+  id: 'views_block:comments_recent-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility: {  }

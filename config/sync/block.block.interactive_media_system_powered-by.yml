@@ -1,0 +1,20 @@
+uuid: 7d3c40f5-2a54-4055-8c55-001d3b80a93c
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - interactive_media
+id: interactive_media_system_powered-by
+theme: interactive_media
+region: footer
+weight: 10
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: ''
+  provider: system
+  label_display: '0'
+visibility: {  }

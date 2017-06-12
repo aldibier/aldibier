@@ -1,0 +1,20 @@
+uuid: 6d79a867-f006-49de-9cf3-6298c6f5eda6
+langcode: es
+status: true
+dependencies:
+  theme:
+    - arthemia
+id: arthemia_aggregator_feed-1
+theme: arthemia
+region: content
+weight: -10
+provider: null
+plugin: aggregator_feed_block
+settings:
+  id: broken
+  label: ''
+  provider: core
+  label_display: '0'
+  block_count: '5'
+  feed: '1'
+visibility: {  }

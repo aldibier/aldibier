@@ -1,0 +1,25 @@
+uuid: ef6054c4-509f-45a6-8816-2a5043a4c9e4
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:9165a62b-710c-4a03-b9b3-330222621545'
+  module:
+    - block_content
+  theme:
+    - bartik
+id: metro_zymphonies_theme_block_9
+theme: bartik
+region: content
+weight: -15
+provider: null
+plugin: 'block_content:9165a62b-710c-4a03-b9b3-330222621545'
+settings:
+  id: 'block_content:9165a62b-710c-4a03-b9b3-330222621545'
+  label: ''
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

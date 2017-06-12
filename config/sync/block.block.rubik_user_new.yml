@@ -1,0 +1,24 @@
+uuid: 269e1de0-fad5-423d-afd0-57145779179c
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.who_s_new
+  module:
+    - views
+  theme:
+    - rubik
+id: rubik_user_new
+theme: rubik
+region: header
+weight: -1
+provider: null
+plugin: 'views_block:who_s_new-block_1'
+settings:
+  id: 'views_block:who_s_new-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: '5'
+visibility: {  }

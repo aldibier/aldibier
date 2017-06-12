@@ -1,0 +1,20 @@
+uuid: 6065d922-3b6f-47cf-8382-09168822c45c
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - plainscape
+id: plainscape_system_main
+theme: plainscape
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: ''
+  provider: system
+  label_display: '0'
+visibility: {  }

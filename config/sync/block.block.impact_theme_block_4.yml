@@ -1,0 +1,25 @@
+uuid: 5d53ab5b-b71a-4f01-b4b3-714a3e79fb54
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:5c536f17-8a91-4e89-b2ac-b65b0c472586'
+  module:
+    - block_content
+  theme:
+    - impact_theme
+id: impact_theme_block_4
+theme: impact_theme
+region: content
+weight: 0
+provider: null
+plugin: 'block_content:5c536f17-8a91-4e89-b2ac-b65b0c472586'
+settings:
+  id: 'block_content:5c536f17-8a91-4e89-b2ac-b65b0c472586'
+  label: ''
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

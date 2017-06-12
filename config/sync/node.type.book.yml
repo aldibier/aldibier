@@ -1,0 +1,11 @@
+uuid: 7af722c2-f89c-4bdf-84e5-281575dc0b23
+langcode: es
+status: true
+dependencies: {  }
+name: 'Book page'
+type: book
+description: 'A <em>book page</em> is a page of content, organized into a collection of related entries collectively known as a <em>book</em>. A <em>book page</em> automatically displays links to adjacent pages, providing a simple navigation system for organizing and reviewing structured content.'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true

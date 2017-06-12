@@ -1,0 +1,20 @@
+uuid: fc7cb024-a78c-434e-8a3c-9f90afeffc88
+langcode: es
+status: true
+dependencies:
+  module:
+    - text
+    - user
+id: user.profile_edad
+field_name: profile_edad
+entity_type: user
+type: text
+settings:
+  max_length: 255
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

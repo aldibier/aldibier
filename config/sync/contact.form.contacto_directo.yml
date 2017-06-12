@@ -1,0 +1,12 @@
+uuid: 88927559-7da6-48b2-aace-6b242970e010
+langcode: es
+status: true
+dependencies: {  }
+id: contacto_directo
+label: 'Contacto directo'
+recipients:
+  - me@aldibier.com
+reply: 'Su mensaje ha sido enviado.'
+weight: 0
+message: 'Your message has been sent.'
+redirect: ''

@@ -1,0 +1,20 @@
+uuid: 44b2d0d7-19f2-450f-abfc-dcdcb0cbb76c
+langcode: es
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - lexi_responsive_theme
+id: lexi_responsive_theme_search_form
+theme: lexi_responsive_theme
+region: sidebar_first
+weight: -13
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: ''
+  provider: search
+  label_display: '0'
+visibility: {  }

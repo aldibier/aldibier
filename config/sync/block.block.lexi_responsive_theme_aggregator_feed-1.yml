@@ -1,0 +1,20 @@
+uuid: 7cde41c5-f3de-46df-90c6-63e2100765ac
+langcode: es
+status: true
+dependencies:
+  theme:
+    - lexi_responsive_theme
+id: lexi_responsive_theme_aggregator_feed-1
+theme: lexi_responsive_theme
+region: sidebar_first
+weight: -13
+provider: null
+plugin: aggregator_feed_block
+settings:
+  id: broken
+  label: ''
+  provider: core
+  label_display: '0'
+  block_count: '5'
+  feed: '1'
+visibility: {  }

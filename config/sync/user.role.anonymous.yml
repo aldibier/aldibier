@@ -1,0 +1,28 @@
+uuid: 5b1414a5-257b-4554-a77d-2df83bc4313c
+langcode: es
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: j5zLMOdJBqC0bMvSdth5UebkprJB8g_2FXHqhfpJzow
+id: anonymous
+label: 'anonymous user'
+weight: 0
+is_admin: false
+permissions:
+  - 'access comments'
+  - 'access content'
+  - 'access news feeds'
+  - 'access site-wide contact form'
+  - 'collapse format fieldset by default'
+  - 'collapsible format selection'
+  - 'post comments'
+  - 'search content'
+  - 'show advertisements'
+  - 'show format selection for blocks'
+  - 'show format selection for comments'
+  - 'show format selection for nodes'
+  - 'show format tips'
+  - 'show more format tips link'
+  - 'skip comment approval'
+  - 'toggle disqus comments'
+  - 'view disqus comments'

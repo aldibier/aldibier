@@ -1,0 +1,9 @@
+uuid: ef794ab5-41f1-45d8-ae8f-6a87234dfaf6
+langcode: es
+status: true
+dependencies: {  }
+name: 'Ad groups'
+vid: vocabulary_1
+description: null
+hierarchy: 0
+weight: 0
