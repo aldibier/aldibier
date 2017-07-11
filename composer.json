@@ -22,6 +22,7 @@
         "drupal/console": "~1.0",
         "drupal/core": "~8.0",
         "drupal/devel": "~1.0",
+        "drupal/disqus": "^1.0@RC",
         "drupal/google_analytics": "^2.1",
         "drupal/pathauto": "^1.0",
         "drupal/zircon": "^0.2.0",
