@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "72557582b0e6ecf1300880434e63dbb6",
+    "content-hash": "17c8d881b836a3b23bf6801d6cbae65e",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -1118,6 +1118,512 @@
             "time": "2017-05-05T21:26:28+00:00"
         },
         {
+            "name": "drupal/anchor_link",
+            "version": "1.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/anchor_link",
+                "reference": "8.x-1.5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/anchor_link-8.x-1.5.zip",
+                "reference": "8.x-1.5",
+                "shasum": "60fefc0fb910c28af5ba6e35a7cc47d04c0ad7b0"
+            },
+            "require": {
+                "drupal/core": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.5",
+                    "datestamp": "1497280742"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Mohammed J. Razem",
+                    "homepage": "https://www.drupal.org/user/255384"
+                },
+                {
+                    "name": "RajabNatshah",
+                    "homepage": "https://www.drupal.org/user/1414312"
+                }
+            ],
+            "description": "This plugin module adds the better link dialog and anchor related features to CKEditor in Drupal 8",
+            "homepage": "https://www.drupal.org/project/anchor_link",
+            "support": {
+                "source": "http://cgit.drupalcode.org/anchor_link"
+            }
+        },
+        {
+            "name": "drupal/ckeditor_balloonpanel",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/ckeditor_balloonpanel",
+                "reference": "8.x-1.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/ckeditor_balloonpanel-8.x-1.1.zip",
+                "reference": "8.x-1.1",
+                "shasum": "9ef2c9a7e3fefbe108d61593246a57bd2f0761c5"
+            },
+            "require": {
+                "drupal/core": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.1",
+                    "datestamp": "1466961839"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Mauricio Dinarte (dinarcon)",
+                    "homepage": "https://www.drupal.org/u/dinarcon",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Darryl Norris (darol100)",
+                    "homepage": "https://www.drupal.org/u/darol100",
+                    "role": "Maintainer"
+                }
+            ],
+            "description": "Adds the Balloon Panel Plugin plugin to CKEditor.",
+            "homepage": "http://drupal.org/project/ckeditor_balloonpanel",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/ckeditor_balloonpanel",
+                "issues": "http://drupal.org/project/issues/ckeditor_balloonpanel"
+            }
+        },
+        {
+            "name": "drupal/ckeditor_find",
+            "version": "dev-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/ckeditor_find",
+                "reference": "730afc92ce9542af3a74d38d376ccfc3a446c48a"
+            },
+            "require": {
+                "drupal/core": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.x-dev",
+                    "datestamp": "1488980283"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "dhansen",
+                    "homepage": "https://www.drupal.org/user/1194436"
+                }
+            ],
+            "description": "This plugin module adds the find and replace dialog to CKEditor in Drupal 8",
+            "homepage": "https://www.drupal.org/project/ckeditor_find",
+            "support": {
+                "source": "http://cgit.drupalcode.org/ckeditor_find"
+            },
+            "time": "2016-10-13 15:05:37"
+        },
+        {
+            "name": "drupal/ckeditor_font",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/ckeditor_font",
+                "reference": "8.x-1.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/ckeditor_font-8.x-1.0.zip",
+                "reference": "8.x-1.0",
+                "shasum": "c2c412e477171b44f3c4c6550c0649ce6385a933"
+            },
+            "require": {
+                "drupal/core": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0",
+                    "datestamp": "1458716040"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "darol100",
+                    "homepage": "https://www.drupal.org/user/2667123"
+                },
+                {
+                    "name": "dinarcon",
+                    "homepage": "https://www.drupal.org/user/909522"
+                }
+            ],
+            "description": "This plugin adds Font Size and Font Family dropdowns that applies as inline element style.",
+            "homepage": "https://www.drupal.org/project/ckeditor_font",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/ckeditor_font",
+                "issues": "http://drupal.org/project/issues/ckeditor_font"
+            }
+        },
+        {
+            "name": "drupal/ckeditor_liststyle",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/ckeditor_liststyle",
+                "reference": "8.x-1.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/ckeditor_liststyle-8.x-1.1.zip",
+                "reference": "8.x-1.1",
+                "shasum": "3117c878bc709fe649cf5fdf044a509bbe4b4d9d"
+            },
+            "require": {
+                "drupal/core": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.1",
+                    "datestamp": "1483281843"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Osman Gormus (osman)",
+                    "homepage": "https://www.drupal.org/u/osman",
+                    "role": "Maintainer"
+                }
+            ],
+            "description": "This plugin adds numbered list and ordered list properties dialogs (available in context menu) in CKEditor.",
+            "homepage": "http://drupal.org/project/ckeditor_liststyle",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/ckeditor_liststyle",
+                "issues": "http://drupal.org/project/issues/ckeditor_liststyle"
+            }
+        },
+        {
+            "name": "drupal/ckeditor_media_embed",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/ckeditor_media_embed",
+                "reference": "8.x-1.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/ckeditor_media_embed-8.x-1.1.zip",
+                "reference": "8.x-1.1",
+                "shasum": "fad1db6516421c36adf00ef22a0ae24447089f35"
+            },
+            "require": {
+                "drupal/core": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.1",
+                    "datestamp": "1496425743"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Jody Lynn",
+                    "homepage": "https://www.drupal.org/user/112500"
+                },
+                {
+                    "name": "grndlvl",
+                    "homepage": "https://www.drupal.org/user/103553"
+                }
+            ],
+            "description": "Adds the Media Embed CKEditor plugins to Drupal.",
+            "homepage": "https://www.drupal.org/project/embed",
+            "support": {
+                "source": "https://drupal.org/project/ckeditor_media_embed",
+                "issues": "https://drupal.org/project/issues/ckeditor_media_embed"
+            }
+        },
+        {
+            "name": "drupal/ckeditor_templates",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/ckeditor_templates",
+                "reference": "8.x-1.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/ckeditor_templates-8.x-1.0.zip",
+                "reference": null,
+                "shasum": "706be94033bb2babf6fd0fb499c6aa326914b7ff"
+            },
+            "require": {
+                "drupal/core": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0",
+                    "datestamp": "1490206982"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "lucaslg",
+                    "homepage": "https://www.drupal.org/user/3128975"
+                }
+            ],
+            "description": "Integrates the CKEdito templates plugin",
+            "homepage": "https://www.drupal.org/project/ckeditor_templates",
+            "support": {
+                "source": "http://cgit.drupalcode.org/ckeditor_templates"
+            }
+        },
+        {
+            "name": "drupal/ckeditor_uploadimage",
+            "version": "1.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/ckeditor_uploadimage",
+                "reference": "8.x-1.4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/ckeditor_uploadimage-8.x-1.4.zip",
+                "reference": "8.x-1.4",
+                "shasum": "ca8cdbd314beb6488f89bd7ada8321f9f127df06"
+            },
+            "require": {
+                "drupal/core": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.4",
+                    "datestamp": "1493618345"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Roland Michael dela Peña (arpeggio)",
+                    "homepage": "https://www.webfoobar.com",
+                    "role": "Maintainer"
+                }
+            ],
+            "description": "Integrates CKEditor's Upload Image plugin to Drupal. This enables Drupal's default WYSIWYG text editor capable of uploading images that were dropped or pasted from clipboard into the editor as inline image.",
+            "homepage": "https://drupal.org/project/ckeditor_uploadimage",
+            "support": {
+                "source": "http://cgit.drupalcode.org/ckeditor_uploadimage"
+            }
+        },
+        {
+            "name": "drupal/ckeditor_widgets",
+            "version": "dev-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/ckeditor_widgets",
+                "reference": "2d462637f8804b6d0b530604d0376e97a23a3b7f"
+            },
+            "require": {
+                "drupal/core": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.x-dev",
+                    "datestamp": "1472798939"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "jlyon",
+                    "homepage": "https://www.drupal.org/user/256444"
+                }
+            ],
+            "description": "Adds widgets and an Insert Template menu to CKEditor",
+            "homepage": "https://www.drupal.org/project/ckeditor_widgets",
+            "support": {
+                "source": "http://cgit.drupalcode.org/ckeditor_widgets"
+            },
+            "time": "2016-09-02 06:39:25"
+        },
+        {
+            "name": "drupal/ckeditor_youtube",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/ckeditor_youtube",
+                "reference": "8.x-1.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/ckeditor_youtube-8.x-1.1.zip",
+                "reference": "8.x-1.1",
+                "shasum": "3629836974a5dd776c7fd2239be87e3598efc77a"
+            },
+            "require": {
+                "drupal/core": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.1",
+                    "datestamp": "1494799087"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Mauricio Dinarte (dinarcon)",
+                    "homepage": "https://www.drupal.org/u/dinarcon",
+                    "role": "Maintainer"
+                }
+            ],
+            "description": "Adds the Youtube plugin to CKEditor.",
+            "homepage": "http://drupal.org/project/ckeditor_youtube",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/ckeditor_youtube",
+                "issues": "http://drupal.org/project/issues/ckeditor_youtube"
+            }
+        },
+        {
+            "name": "drupal/codesnippet",
+            "version": "1.6.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/codesnippet",
+                "reference": "8.x-1.6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/codesnippet-8.x-1.6.zip",
+                "reference": "8.x-1.6",
+                "shasum": "cda07e671361defed098a8e82da0cd42c44d3970"
+            },
+            "require": {
+                "drupal/core": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.6",
+                    "datestamp": "1473688439"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Kevin Quillen (kevinquillen)",
+                    "homepage": "https://www.drupal.org/u/kevinquillen",
+                    "role": "Maintainer"
+                }
+            ],
+            "description": "Adds the CodeSnippet plugin to CKEditor.",
+            "homepage": "http://drupal.org/project/codesnippet",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/codesnippet",
+                "issues": "http://drupal.org/project/issues/codesnippet"
+            }
+        },
+        {
             "name": "drupal/console",
             "version": "1.0.0-rc21",
             "source": {
@@ -1845,7 +2351,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/metatag-8.x-1.1.zip",
-                "reference": null,
+                "reference": "8.x-1.1",
                 "shasum": "bb9b608879e2f7d8086a0e6606286086f5009d71"
             },
             "require": {
@@ -6461,6 +6967,8 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "drupal/ckeditor_find": 20,
+        "drupal/ckeditor_widgets": 20,
         "drupal/disqus": 5
     },
     "prefer-stable": true,
