@@ -12,7 +12,7 @@ register_no_approval_required:
   subject: 'Detalles de la cuenta para [user:name] en [site:name]'
 register_pending_approval:
   body: "[user:name],\r\n\r\nGracias por registrarse en !sitio. Su aplicación por una cuenta está pendiente de aprobación. Una vez que haya sido aprobada, usted recibirá otro correo electrónico con información sobre como iniciar sesión, establecer su contraseña y otros detalles.\r\n\r\n\r\n-- el equipo de [site:name]"
-  subject: 'Detalles de la cuenta para [user:name] en [site:name] (esperando la aprobación del administrador)'
+  subject: 'Detalles de cuenta para [user:display-name] en [site:name] (pendiente de aprobación por el administrador)'
 register_pending_approval_admin:
   body: "[user:display-name] ha aplicado para una cuenta.\r\n\r\n[user:edit-url]"
   subject: 'Detalles de cuenta para [user:display-name] en [site:name] (pendiente de aprobación por el administrador)'

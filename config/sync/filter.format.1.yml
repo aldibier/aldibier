@@ -1,6 +1,6 @@
 uuid: 9b40193e-3fb8-40b4-bef8-d00065c0b21f
 langcode: es
-status: true
+status: false
 dependencies: {  }
 name: 'Filtered HTML'
 format: '1'

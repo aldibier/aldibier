@@ -1,0 +1,33 @@
+uuid: 274ffd5f-f480-4bc4-90ac-1e90cbda3537
+langcode: es
+status: true
+dependencies:
+  module:
+    - language
+    - node
+id: articulo_blog
+label: 'Artículo Blog'
+type: 'canonical_entities:node'
+pattern: 'blog/articulo/[node:title]'
+selection_criteria:
+  44618319-7af8-43f1-a42e-2aafa17b81c4:
+    id: node_type
+    bundles:
+      blog: blog
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 44618319-7af8-43f1-a42e-2aafa17b81c4
+  15b6a65e-a052-40ef-879f-0a53e8b08ace:
+    id: language
+    langcodes:
+      es: es
+    negate: false
+    context_mapping:
+      language: 'node:langcode:language'
+    uuid: 15b6a65e-a052-40ef-879f-0a53e8b08ace
+selection_logic: and
+weight: -10
+relationships:
+  'node:langcode:language':
+    label: Idioma

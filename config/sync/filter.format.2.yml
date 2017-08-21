@@ -1,6 +1,6 @@
 uuid: 46598827-d54f-4d5c-8226-2d8d927cb0e8
 langcode: es
-status: true
+status: false
 dependencies: {  }
 name: 'Full HTML'
 format: '2'

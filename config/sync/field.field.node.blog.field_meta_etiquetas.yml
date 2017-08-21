@@ -1,0 +1,21 @@
+uuid: a0e70d61-952f-47fc-9feb-4703ed0f515b
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_meta_etiquetas
+    - node.type.blog
+  module:
+    - metatag
+id: node.blog.field_meta_etiquetas
+field_name: field_meta_etiquetas
+entity_type: node
+bundle: blog
+label: 'Meta etiquetas'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: metatag

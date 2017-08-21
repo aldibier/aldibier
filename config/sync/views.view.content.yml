@@ -8,7 +8,7 @@ dependencies:
 _core:
   default_config_hash: YIwhIF9MSP1E_HMam6MrYeti_UqMXQiLDMjDsPFKK8s
 id: content
-label: Contenido
+label: Content
 module: node
 description: 'Encontrar y gestionar contenido.'
 tag: default
@@ -278,8 +278,8 @@ display:
           type: boolean
           settings:
             format: custom
-            format_custom_true: Published
-            format_custom_false: Unpublished
+            format_custom_true: Publicado
+            format_custom_false: 'Sin publicar'
           plugin_id: field
           entity_type: node
           entity_field: status
@@ -534,7 +534,7 @@ display:
           entity_type: node
           entity_field: langcode
       sorts: {  }
-      title: Contenido
+      title: Content
       empty:
         area_text_custom:
           id: area_text_custom
@@ -578,7 +578,7 @@ display:
       path: admin/content/node
       menu:
         type: 'default tab'
-        title: Contenido
+        title: Content
         description: ''
         menu_name: admin
         weight: -10
@@ -587,7 +587,7 @@ display:
         expanded: false
       tab_options:
         type: normal
-        title: Contenido
+        title: Content
         description: 'Buscar y administrar contenido'
         menu_name: admin
         weight: -10

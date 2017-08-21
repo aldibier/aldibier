@@ -1,7 +1,13 @@
 uuid: a3787986-fec7-4ed0-8590-daf2be0b9f34
 langcode: es
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
 name: 'Entrada de blog'
 type: blog
 description: 'Una <em>entrada de blog</em> es un mensaje individual en un diario en línea, o <em>blog</em>.'

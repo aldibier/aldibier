@@ -1,0 +1,20 @@
+disqus_domain: aldibier
+behavior:
+  disqus_localization: true
+  disqus_inherit_login: true
+  disqus_disable_mobile: false
+  disqus_track_newcomment_ga: true
+advanced:
+  disqus_useraccesstoken: 5a8b66dd280e40ec858bffa4a0ca3738
+  disqus_publickey: t86Rzw5XnAi3AciLKcof8yFo3N0bmAKwsyi4qLzqhAscOGikCQhbkUXEt4ecjOgy
+  disqus_secretkey: NLMjm4MY3LIWEXJkMwwATDJKfmX9NbXvyeKPM6VqN1FLeT5WM4P48c6Yq62CHoIs
+  api:
+    disqus_api_update: true
+    disqus_api_delete: '0'
+  sso:
+    disqus_sso: false
+    disqus_use_site_logo: false
+    disqus_logo: ''
+_core:
+  default_config_hash: cLPUKXMlBdHBqZyzVRCLdj0IK7Z5zD6ro3GLAuIpiNU
+langcode: es

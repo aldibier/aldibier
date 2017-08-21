@@ -7,7 +7,7 @@ dependencies:
 _core:
   default_config_hash: queuLjhKGUQ_b-lNh_TkhCvOPrVunfJopvVGOf3cjAo
 id: user_admin_people
-label: Personas
+label: Usuarios
 module: user
 description: 'Encontrar y gestionar qué personas interactúan con su sitio.'
 tag: default
@@ -296,8 +296,8 @@ display:
           type: boolean
           settings:
             format: custom
-            format_custom_true: Active
-            format_custom_false: Blocked
+            format_custom_true: Aprobado
+            format_custom_false: Bloqueado
           entity_type: user
           entity_field: status
         roles_target_id:
@@ -842,7 +842,7 @@ display:
           plugin_id: date
           entity_type: user
           entity_field: created
-      title: Personas
+      title: Usuarios
       empty:
         area_text_custom:
           id: area_text_custom
@@ -899,7 +899,7 @@ display:
         expanded: false
       tab_options:
         type: normal
-        title: Personas
+        title: Usuarios
         description: 'Gestionar cuentas de usuario, roles y permisos.'
         menu_name: admin
         weight: 0

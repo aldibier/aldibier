@@ -5,11 +5,15 @@ dependencies:
   config:
     - field.field.node.blog.body
     - field.field.node.blog.field_archivo
+    - field.field.node.blog.field_disqus_comments
+    - field.field.node.blog.field_meta_etiquetas
     - field.field.node.blog.field_tema
     - field.field.node.blog.upload
     - node.type.blog
   module:
+    - disqus
     - file
+    - metatag
     - text
     - user
 id: node.blog.default
@@ -23,12 +27,28 @@ content:
     type: text_default
     settings: {  }
     third_party_settings: {  }
+    region: content
   field_archivo:
     label: above
     weight: 5
     type: file_default
     settings: {  }
     third_party_settings: {  }
+    region: content
+  field_disqus_comments:
+    weight: 101
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: disqus_comment
+    region: content
+  field_meta_etiquetas:
+    weight: 102
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: metatag_empty_formatter
+    region: content
   field_tema:
     label: above
     weight: 4
@@ -36,13 +56,16 @@ content:
     settings:
       link: true
     third_party_settings: {  }
+    region: content
   links:
     weight: 100
+    region: content
   upload:
     label: hidden
     weight: 0
     type: file_table
     settings: {  }
     third_party_settings: {  }
+    region: content
 hidden:
   langcode: true

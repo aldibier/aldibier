@@ -1,6 +1,6 @@
 uuid: d73f92de-da96-4ff3-a8b0-f01278416a10
 langcode: es
-status: true
+status: false
 dependencies: {  }
 name: 'Full HTML without WYSIWYG'
 format: full_html_without_wysiwyg

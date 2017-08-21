@@ -23,7 +23,9 @@ content:
       trim_length: 600
     third_party_settings: {  }
     weight: 102
+    region: content
   links:
     weight: 101
+    region: content
 hidden:
   langcode: true

@@ -11,7 +11,7 @@ dependencies:
 _core:
   default_config_hash: YY-QIsPmXCITvYjAnlCzaqASCB1Telev3U0IKOztZkc
 id: taxonomy_term
-label: 'Término de taxonomía'
+label: 'Taxonomy term'
 module: taxonomy
 description: 'Contenido perteneciente a determinado término de taxonomía.'
 tag: default
