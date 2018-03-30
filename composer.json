@@ -21,7 +21,6 @@
         "drupal-composer/drupal-scaffold": "^2.2",
         "drupal/anchor_link": "^1.5",
         "drupal/ckeditor_balloonpanel": "^1.1",
-        "drupal/ckeditor_find": "1.x-dev",
         "drupal/ckeditor_font": "^1.0",
         "drupal/ckeditor_liststyle": "^1.1",
         "drupal/ckeditor_media_embed": "^1.1",
