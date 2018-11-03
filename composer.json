@@ -30,7 +30,7 @@
         "drupal/ckeditor_youtube": "^1.1",
         "drupal/codesnippet": "^1.6",
         "drupal/console": "^1.0",
-        "drupal/core": "~8.0",
+        "drupal/core": "~8.6",
         "drupal/devel": "~1.0",
         "drupal/disqus": "^1.0@RC",
         "drupal/google_analytics": "^2.1",
