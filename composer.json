@@ -19,6 +19,7 @@
         "composer/installers": "^1.2",
         "cweagans/composer-patches": "^1.6",
         "drupal-composer/drupal-scaffold": "^2.2",
+        "drupal/adminimal_theme": "^1.4",
         "drupal/anchor_link": "^1.5",
         "drupal/autosave_form": "1.x-dev",
         "drupal/ckeditor_balloonpanel": "^1.1",
