@@ -1485,12 +1485,9 @@
             },
             "type": "drupal-theme",
             "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
                 "drupal": {
                     "version": "8.x-1.4",
-                    "datestamp": "1547996580",
+                    "datestamp": "1558584484",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -1518,7 +1515,7 @@
             "description": "Drupal administration theme with modern minimalist design.",
             "homepage": "https://www.drupal.org/project/adminimal_theme",
             "support": {
-                "source": "http://cgit.drupalcode.org/adminimal_theme",
+                "source": "https://git.drupalcode.org/project/adminimal_theme",
                 "issues": "https://www.drupal.org/project/issues/adminimal_theme"
             }
         },
@@ -1537,16 +1534,13 @@
                 "shasum": "89c436f459e62dbdfdaf52a92f9f9265eec1df13"
             },
             "require": {
-                "drupal/core": "*"
+                "drupal/core": "^8"
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
                 "drupal": {
                     "version": "8.x-1.6",
-                    "datestamp": "1509961084",
+                    "datestamp": "1581868106",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -1555,7 +1549,7 @@
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
@@ -1570,7 +1564,7 @@
             "description": "This plugin module adds the better link dialog and anchor related features to CKEditor in Drupal 8",
             "homepage": "https://www.drupal.org/project/anchor_link",
             "support": {
-                "source": "http://cgit.drupalcode.org/anchor_link"
+                "source": "https://git.drupalcode.org/project/anchor_link"
             }
         },
         {
@@ -1626,20 +1620,21 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/ckeditor_balloonpanel-8.x-1.1.zip",
-                "reference": null,
+                "reference": "8.x-1.1",
                 "shasum": "9ef2c9a7e3fefbe108d61593246a57bd2f0761c5"
             },
             "require": {
-                "drupal/core": "*"
+                "drupal/core": "^8"
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
                 "drupal": {
                     "version": "8.x-1.1",
-                    "datestamp": "1466961839"
+                    "datestamp": "1466961839",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -1656,6 +1651,10 @@
                     "name": "Darryl Norris (darol100)",
                     "homepage": "https://www.drupal.org/u/darol100",
                     "role": "Maintainer"
+                },
+                {
+                    "name": "pifagor",
+                    "homepage": "https://www.drupal.org/user/2375692"
                 }
             ],
             "description": "Adds the Balloon Panel Plugin plugin to CKEditor.",
@@ -1679,20 +1678,21 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/ckeditor_font-8.x-1.0.zip",
-                "reference": null,
+                "reference": "8.x-1.0",
                 "shasum": "c2c412e477171b44f3c4c6550c0649ce6385a933"
             },
             "require": {
-                "drupal/core": "*"
+                "drupal/core": "^8"
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
                 "drupal": {
                     "version": "8.x-1.0",
-                    "datestamp": "1458716040"
+                    "datestamp": "1458716040",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -1700,6 +1700,14 @@
                 "GPL-2.0+"
             ],
             "authors": [
+                {
+                    "name": "Webbeh",
+                    "homepage": "https://www.drupal.org/user/1160608"
+                },
+                {
+                    "name": "cobenash",
+                    "homepage": "https://www.drupal.org/user/2138470"
+                },
                 {
                     "name": "darol100",
                     "homepage": "https://www.drupal.org/user/2667123"
@@ -1735,13 +1743,10 @@
             },
             "require": {
                 "drupal/ckeditor": "*",
-                "drupal/core": "*"
+                "drupal/core": "^8"
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
                 "drupal": {
                     "version": "8.x-1.3",
                     "datestamp": "1530501225",
@@ -1787,16 +1792,13 @@
                 "shasum": "c063c9085c695092eb3255cedeee2e3b1ed67ed1"
             },
             "require": {
-                "drupal/core": "*"
+                "drupal/core": "^8"
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
                 "drupal": {
                     "version": "8.x-1.3",
-                    "datestamp": "1524666180",
+                    "datestamp": "1560173587",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -1815,10 +1817,6 @@
                 {
                     "name": "grndlvl",
                     "homepage": "https://www.drupal.org/user/103553"
-                },
-                {
-                    "name": "jlamp",
-                    "homepage": "https://www.drupal.org/user/3507613"
                 }
             ],
             "description": "Adds the Media Embed CKEditor plugins to Drupal.",
@@ -1839,25 +1837,26 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/ckeditor_templates-8.x-1.0.zip",
-                "reference": null,
+                "reference": "8.x-1.0",
                 "shasum": "706be94033bb2babf6fd0fb499c6aa326914b7ff"
             },
             "require": {
-                "drupal/core": "*"
+                "drupal/core": "^8"
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
                 "drupal": {
                     "version": "8.x-1.0",
-                    "datestamp": "1490206982"
+                    "datestamp": "1552809780",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
@@ -1868,7 +1867,7 @@
             "description": "Integrates the CKEdito templates plugin",
             "homepage": "https://www.drupal.org/project/ckeditor_templates",
             "support": {
-                "source": "http://cgit.drupalcode.org/ckeditor_templates"
+                "source": "https://git.drupalcode.org/project/ckeditor_templates"
             }
         },
         {
@@ -1886,16 +1885,13 @@
                 "shasum": "dc427fcf73b956409e7a22d46d6d2bfb67b040c3"
             },
             "require": {
-                "drupal/core": "*"
+                "drupal/core": "^8"
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
                 "drupal": {
                     "version": "8.x-1.5",
-                    "datestamp": "1519351726",
+                    "datestamp": "1553856781",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -1920,7 +1916,7 @@
             "description": "Integrates CKEditor's Upload Image plugin to Drupal. This enables Drupal's default WYSIWYG text editor capable of uploading images that were dropped or pasted from clipboard into the editor as inline image.",
             "homepage": "https://drupal.org/project/ckeditor_uploadimage",
             "support": {
-                "source": "http://cgit.drupalcode.org/ckeditor_uploadimage"
+                "source": "https://git.drupalcode.org/project/ckeditor_uploadimage"
             }
         },
         {
@@ -1941,12 +1937,16 @@
                 },
                 "drupal": {
                     "version": "8.x-1.x-dev",
-                    "datestamp": "1472798939"
+                    "datestamp": "1472798939",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
@@ -1957,7 +1957,7 @@
             "description": "Adds widgets and an Insert Template menu to CKEditor",
             "homepage": "https://www.drupal.org/project/ckeditor_widgets",
             "support": {
-                "source": "http://cgit.drupalcode.org/ckeditor_widgets"
+                "source": "https://git.drupalcode.org/project/ckeditor_widgets"
             },
             "time": "2016-09-02T06:39:25+00:00"
         },
@@ -1972,20 +1972,21 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/ckeditor_youtube-8.x-1.1.zip",
-                "reference": null,
+                "reference": "8.x-1.1",
                 "shasum": "3629836974a5dd776c7fd2239be87e3598efc77a"
             },
             "require": {
-                "drupal/core": "*"
+                "drupal/core": "^8"
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
                 "drupal": {
                     "version": "8.x-1.1",
-                    "datestamp": "1494799087"
+                    "datestamp": "1566101289",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -1997,6 +1998,10 @@
                     "name": "Mauricio Dinarte (dinarcon)",
                     "homepage": "https://www.drupal.org/u/dinarcon",
                     "role": "Maintainer"
+                },
+                {
+                    "name": "gnuget",
+                    "homepage": "https://www.drupal.org/user/992990"
                 }
             ],
             "description": "Adds the Youtube plugin to CKEditor.",
@@ -2020,20 +2025,21 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/codesnippet-8.x-1.6.zip",
-                "reference": null,
+                "reference": "8.x-1.6",
                 "shasum": "cda07e671361defed098a8e82da0cd42c44d3970"
             },
             "require": {
-                "drupal/core": "*"
+                "drupal/core": "^8"
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
                 "drupal": {
                     "version": "8.x-1.6",
-                    "datestamp": "1473688439"
+                    "datestamp": "1473688439",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -2045,6 +2051,14 @@
                     "name": "Kevin Quillen (kevinquillen)",
                     "homepage": "https://www.drupal.org/u/kevinquillen",
                     "role": "Maintainer"
+                },
+                {
+                    "name": "kevinquillen",
+                    "homepage": "https://www.drupal.org/user/317279"
+                },
+                {
+                    "name": "szloredan",
+                    "homepage": "https://www.drupal.org/user/3531611"
                 }
             ],
             "description": "Adds the CodeSnippet plugin to CKEditor.",
@@ -2606,7 +2620,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/ctools-8.x-3.0.zip",
-                "reference": null,
+                "reference": "8.x-3.0",
                 "shasum": "302e869ecd1e59fe55663673999fee2ccac5daa8"
             },
             "require": {
@@ -2614,12 +2628,13 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-3.x": "3.x-dev"
-                },
                 "drupal": {
                     "version": "8.x-3.0",
-                    "datestamp": "1493401742"
+                    "datestamp": "1549603381",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -2651,6 +2666,10 @@
                     "name": "Daniel Wehner (dawehner)",
                     "homepage": "https://www.drupal.org/u/dawehner",
                     "role": "Maintainer"
+                },
+                {
+                    "name": "joelpittet",
+                    "homepage": "https://www.drupal.org/user/160302"
                 },
                 {
                     "name": "merlinofchaos",
@@ -2702,9 +2721,6 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
                 "drupal": {
                     "version": "8.x-1.2",
                     "datestamp": "1507197844",
@@ -2744,14 +2760,6 @@
                 {
                     "name": "See contributors",
                     "homepage": "https://www.drupal.org/node/3236/committers"
-                },
-                {
-                    "name": "salvis",
-                    "homepage": "https://www.drupal.org/user/82964"
-                },
-                {
-                    "name": "willzyx",
-                    "homepage": "https://www.drupal.org/user/1043862"
                 }
             ],
             "description": "Various blocks, pages, and functions for developers.",
@@ -2773,21 +2781,22 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/disqus-8.x-1.0-rc3.zip",
-                "reference": null,
+                "reference": "8.x-1.0-rc3",
                 "shasum": "896a8cc049dec6f417447fdea89b8fb8722c2bc3"
             },
             "require": {
                 "drexarj/disqus-php": "dev-master",
-                "drupal/core": "*"
+                "drupal/core": "^8"
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
                 "drupal": {
                     "version": "8.x-1.0-rc3",
-                    "datestamp": "1476615539"
+                    "datestamp": "1565393585",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "RC releases are not covered by Drupal security advisories."
+                    }
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -2812,6 +2821,10 @@
                     "homepage": "https://www.drupal.org/user/99340"
                 },
                 {
+                    "name": "jason.blanda",
+                    "homepage": "https://www.drupal.org/user/1969424"
+                },
+                {
                     "name": "marcingy",
                     "homepage": "https://www.drupal.org/user/77320"
                 },
@@ -2823,7 +2836,7 @@
             "description": ".",
             "homepage": "http://drupal.org/project/disqus",
             "support": {
-                "source": "http://cgit.drupalcode.org/disqus"
+                "source": "https://git.drupalcode.org/project/disqus"
             }
         },
         {
@@ -2849,9 +2862,6 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-2.x": "2.x-dev"
-                },
                 "drupal": {
                     "version": "8.x-2.4",
                     "datestamp": "1548968580",
@@ -2873,6 +2883,22 @@
                 {
                     "name": "See other contributors",
                     "homepage": "https://www.drupal.org/node/49388/committers"
+                },
+                {
+                    "name": "ixismark",
+                    "homepage": "https://www.drupal.org/user/3632333"
+                },
+                {
+                    "name": "japerry",
+                    "homepage": "https://www.drupal.org/user/45640"
+                },
+                {
+                    "name": "pfaocle",
+                    "homepage": "https://www.drupal.org/user/9740"
+                },
+                {
+                    "name": "roberto.rivera.ixis",
+                    "homepage": "https://www.drupal.org/user/3632325"
                 }
             ],
             "description": "Allows your site to be tracked by Google Analytics by adding a Javascript tracking code to every page.",
@@ -2901,12 +2927,9 @@
             },
             "type": "drupal-theme",
             "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
                 "drupal": {
                     "version": "8.x-1.4",
-                    "datestamp": "1548940380",
+                    "datestamp": "1553499180",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -2921,12 +2944,20 @@
                 {
                     "name": "bataboza",
                     "homepage": "https://www.drupal.org/user/3581173"
+                },
+                {
+                    "name": "diqidoq",
+                    "homepage": "https://www.drupal.org/user/1001934"
+                },
+                {
+                    "name": "doxigo",
+                    "homepage": "https://www.drupal.org/user/1331334"
                 }
             ],
             "description": "Mediteran administrator is responsive theme for Drupal 8 with clean and modern design.",
             "homepage": "https://www.drupal.org/project/mediteran",
             "support": {
-                "source": "http://cgit.drupalcode.org/mediteran"
+                "source": "https://git.drupalcode.org/project/mediteran"
             }
         },
         {
@@ -2948,12 +2979,9 @@
             },
             "type": "drupal-theme",
             "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
                 "drupal": {
                     "version": "8.x-1.1",
-                    "datestamp": "1538591880",
+                    "datestamp": "1568197088",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -2973,7 +3001,7 @@
             "description": "A simple clean theme inspired by Medium blogging platform.",
             "homepage": "https://www.drupal.org/project/medium_theme",
             "support": {
-                "source": "http://cgit.drupalcode.org/medium_theme"
+                "source": "https://git.drupalcode.org/project/medium_theme"
             }
         },
         {
@@ -2991,7 +3019,7 @@
                 "shasum": "fb5d31aa08c8c2e175f096f9917e9741db152ea8"
             },
             "require": {
-                "drupal/core": "*",
+                "drupal/core": "^8",
                 "drupal/token": "^1.0"
             },
             "require-dev": {
@@ -3006,12 +3034,9 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
                 "drupal": {
                     "version": "8.x-1.8",
-                    "datestamp": "1550692511",
+                    "datestamp": "1563995941",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -3046,31 +3071,28 @@
         },
         {
             "name": "drupal/pathauto",
-            "version": "1.3.0",
+            "version": "1.6.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/pathauto.git",
-                "reference": "8.x-1.3"
+                "reference": "8.x-1.6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/pathauto-8.x-1.3.zip",
-                "reference": "8.x-1.3",
-                "shasum": "115d5998d7636a03e26c7ce34261b65809d53965"
+                "url": "https://ftp.drupal.org/files/projects/pathauto-8.x-1.6.zip",
+                "reference": "8.x-1.6",
+                "shasum": "eb976ae110d73c06fafb1b657adb967dd2cb8246"
             },
             "require": {
-                "drupal/core": "^8.5",
+                "drupal/core": "^8.6",
                 "drupal/ctools": "*",
                 "drupal/token": "*"
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
                 "drupal": {
-                    "version": "8.x-1.3",
-                    "datestamp": "1536407884",
+                    "version": "8.x-1.6",
+                    "datestamp": "1575467285",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -3102,7 +3124,7 @@
             "description": "Provides a mechanism for modules to automatically generate aliases for the content they manage.",
             "homepage": "https://www.drupal.org/project/pathauto",
             "support": {
-                "source": "http://cgit.drupalcode.org/pathauto"
+                "source": "https://git.drupalcode.org/project/pathauto"
             }
         },
         {
@@ -3124,12 +3146,9 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
                 "drupal": {
                     "version": "8.x-1.5",
-                    "datestamp": "1537557481",
+                    "datestamp": "1577708583",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -3169,7 +3188,7 @@
             "description": "Provides a user interface for the Token API and some missing core tokens.",
             "homepage": "https://www.drupal.org/project/token",
             "support": {
-                "source": "http://cgit.drupalcode.org/token"
+                "source": "https://git.drupalcode.org/project/token"
             }
         },
         {
@@ -3191,9 +3210,6 @@
             },
             "type": "drupal-theme",
             "extra": {
-                "branch-alias": {
-                    "dev-2.x": "2.x-dev"
-                },
                 "drupal": {
                     "version": "8.x-2.5",
                     "datestamp": "1535728681",
@@ -3220,7 +3236,7 @@
             "description": "A minimalist theme designed for a developer's personal blog.",
             "homepage": "https://www.drupal.org/project/writer",
             "support": {
-                "source": "http://cgit.drupalcode.org/writer"
+                "source": "https://git.drupalcode.org/project/writer"
             }
         },
         {
@@ -3246,12 +3262,9 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
                 "drupal": {
                     "version": "8.x-1.0-alpha3",
-                    "datestamp": "1538607180",
+                    "datestamp": "1575402780",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Alpha releases are not covered by Drupal security advisories."
@@ -3318,7 +3331,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/zircon-8.x-0.2.zip",
-                "reference": null,
+                "reference": "8.x-0.2",
                 "shasum": "e0c7cb174cc6312a54fe4bc7f4f95677c77946df"
             },
             "require": {
@@ -3326,35 +3339,49 @@
             },
             "type": "drupal-theme",
             "extra": {
-                "branch-alias": {
-                    "dev-0.x": "0.x-dev"
-                },
                 "drupal": {
                     "version": "8.x-0.2",
-                    "datestamp": "1452746339"
+                    "datestamp": "1452746339",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
-                    "name": "DoHa",
-                    "homepage": "https://www.drupal.org/user/1918338"
+                    "name": "Hai Nguyen",
+                    "homepage": "https://www.drupal.org/user/1229130"
                 },
                 {
-                    "name": "HaiNN",
-                    "homepage": "https://www.drupal.org/user/1229130"
+                    "name": "MegaChriz",
+                    "homepage": "https://www.drupal.org/user/654114"
                 },
                 {
                     "name": "WeebPal",
                     "homepage": "https://www.drupal.org/user/1861072"
+                },
+                {
+                    "name": "buivankim2020",
+                    "homepage": "https://www.drupal.org/user/2959439"
+                },
+                {
+                    "name": "mpp",
+                    "homepage": "https://www.drupal.org/user/359881"
+                },
+                {
+                    "name": "tgoeg",
+                    "homepage": "https://www.drupal.org/user/3531072"
                 }
             ],
+            "description": "A flexible, recolorable theme with many regions and a responsive, mobile-first layout.",
             "homepage": "https://www.drupal.org/project/zircon",
             "support": {
-                "source": "http://cgit.drupalcode.org/zircon"
+                "source": "https://git.drupalcode.org/project/zircon"
             }
         },
         {
@@ -3471,12 +3498,12 @@
             "version": "0.9.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/njh/easyrdf.git",
+                "url": "https://github.com/easyrdf/easyrdf.git",
                 "reference": "acd09dfe0555fbcfa254291e433c45fdd4652566"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/njh/easyrdf/zipball/acd09dfe0555fbcfa254291e433c45fdd4652566",
+                "url": "https://api.github.com/repos/easyrdf/easyrdf/zipball/acd09dfe0555fbcfa254291e433c45fdd4652566",
                 "reference": "acd09dfe0555fbcfa254291e433c45fdd4652566",
                 "shasum": ""
             },
@@ -3854,6 +3881,7 @@
                     "email": "jakub.onderka@gmail.com"
                 }
             ],
+            "abandoned": "php-parallel-lint/php-console-color",
             "time": "2018-09-29T17:23:10+00:00"
         },
         {
@@ -3900,6 +3928,7 @@
                 }
             ],
             "description": "Highlight PHP code in terminal",
+            "abandoned": "php-parallel-lint/php-console-highlighter",
             "time": "2018-09-29T18:48:56+00:00"
         },
         {
@@ -5813,7 +5842,7 @@
                 },
                 {
                     "name": "Gert de Pagter",
-                    "email": "backendtea@gmail.com"
+                    "email": "BackEndTea@gmail.com"
                 }
             ],
             "description": "Symfony polyfill for ctype functions",
@@ -6974,6 +7003,7 @@
                 "psr",
                 "psr-7"
             ],
+            "abandoned": "laminas/laminas-diactoros",
             "time": "2018-09-05T19:29:37+00:00"
         },
         {
@@ -7019,6 +7049,7 @@
                 "escaper",
                 "zf"
             ],
+            "abandoned": "laminas/laminas-escaper",
             "time": "2018-04-25T15:48:53+00:00"
         },
         {
@@ -7082,6 +7113,7 @@
                 "feed",
                 "zf"
             ],
+            "abandoned": "laminas/laminas-feed",
             "time": "2019-03-05T20:08:49+00:00"
         },
         {
@@ -7128,6 +7160,7 @@
                 "stdlib",
                 "zf"
             ],
+            "abandoned": "laminas/laminas-stdlib",
             "time": "2018-08-28T21:34:05+00:00"
         }
     ],
@@ -7526,7 +7559,7 @@
             "time": "2016-12-01T10:57:30+00:00"
         },
         {
-            "name": "mikey179/vfsStream",
+            "name": "mikey179/vfsstream",
             "version": "v1.6.5",
             "source": {
                 "type": "git",
@@ -8604,5 +8637,6 @@
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": [],
-    "platform-dev": []
+    "platform-dev": [],
+    "plugin-api-version": "1.1.0"
 }
