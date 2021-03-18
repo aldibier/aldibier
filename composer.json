@@ -20,7 +20,7 @@
         "cweagans/composer-patches": "^1.6",
         "drupal-composer/drupal-scaffold": "^2.2",
         "drupal/adminimal_theme": "^1.4",
-        "drupal/advanced_pwa": "^1.2",
+        "drupal/advanced_pwa": "1.x-dev",
         "drupal/anchor_link": "^1.5",
         "drupal/autosave_form": "1.x-dev",
         "drupal/backup_migrate": "^4.1",
