@@ -760,6 +760,8 @@ $settings['file_scan_ignore_directories'] = [
  * Keep this code block at the end of this file to take full effect.
  */
 
+$settings['install_profile'] = 'standard';
+
 if (getenv('LANDO') === 'ON') {
   $lando_info = json_decode(getenv('LANDO_INFO'), TRUE);
   $settings['trusted_host_patterns'] = ['.*'];
