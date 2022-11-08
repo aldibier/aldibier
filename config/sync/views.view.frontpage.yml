@@ -17,7 +17,6 @@ description: 'Todo el contenido promovido a la página principal.'
 tag: default
 base_table: node_field_data
 base_field: nid
-core: 8.x
 display:
   default:
     display_options:
@@ -68,7 +67,7 @@ display:
         options:
           submit_button: Aplicar
           reset_button: false
-          reset_button_label: Reiniciar
+          reset_button_label: Restablecer
           exposed_sorts_label: 'Ordenar por'
           expose_sort_order: true
           sort_asc_label: Asc
@@ -88,6 +87,8 @@ display:
               authenticated: authenticated
             required: false
             use_operator: false
+            operator_limit_selection: false
+            operator_list: {  }
           exposed: false
           field: promote
           group: 1
@@ -115,6 +116,8 @@ display:
         status:
           expose:
             operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
           field: status
           group: 1
           id: status
@@ -148,6 +151,8 @@ display:
             remember_roles:
               authenticated: authenticated
             reduce: false
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -179,7 +184,7 @@ display:
             offset: false
             offset_label: Desplazamiento
           tags:
-            previous: '‹ Previous'
+            previous: '‹ Anterior'
             next: 'Siguiente >'
             first: '« Primero'
             last: 'Último »'
@@ -241,7 +246,7 @@ display:
       arguments: {  }
       display_extenders: {  }
     display_plugin: default
-    display_title: Maestro
+    display_title: Máster
     id: default
     position: 0
     cache_metadata:
@@ -255,7 +260,7 @@ display:
   feed_1:
     display_plugin: feed
     id: feed_1
-    display_title: Feed
+    display_title: Agregador
     position: 2
     display_options:
       sitename_title: true

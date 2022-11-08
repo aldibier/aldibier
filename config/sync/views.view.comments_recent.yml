@@ -15,12 +15,11 @@ description: 'Comentarios recientes.'
 tag: default
 base_table: comment_field_data
 base_field: cid
-core: 8.x
 display:
   default:
     display_plugin: default
     id: default
-    display_title: Maestro
+    display_title: Máster
     position: 0
     display_options:
       access:
@@ -183,6 +182,8 @@ display:
           plugin_id: boolean
           expose:
             operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
           group: 1
           entity_type: comment
           entity_field: status
@@ -195,6 +196,8 @@ display:
           plugin_id: boolean
           expose:
             operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
           group: 1
           entity_type: node
           entity_field: status
@@ -254,7 +257,7 @@ display:
     position: 1
     display_options:
       block_description: 'Comentarios recientes'
-      block_category: 'Listas (Vistas)'
+      block_category: 'Listas (Views)'
       allow:
         items_per_page: true
       display_extenders: {  }

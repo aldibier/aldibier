@@ -5,5 +5,4 @@ dependencies: {  }
 name: Clasificación
 vid: clasificaci_n
 description: 'Clasificación de los artículos publicados en el Blog'
-hierarchy: 0
 weight: 0

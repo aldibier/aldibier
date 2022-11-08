@@ -5,5 +5,4 @@ dependencies: {  }
 name: 'Ad groups'
 vid: vocabulary_1
 description: null
-hierarchy: 0
 weight: 0

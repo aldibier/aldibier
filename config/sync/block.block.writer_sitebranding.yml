@@ -1,0 +1,25 @@
+uuid: 482c87d9-9e80-490d-a4a2-ff1cdabff2b0
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - writer
+_core:
+  default_config_hash: ghMQP383gPG9kJmpYQXqEEOBtMLEN7Ydew3rFp9R6io
+id: writer_sitebranding
+theme: writer
+region: header
+weight: -4
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: false
+  use_site_slogan: false
+visibility: {  }

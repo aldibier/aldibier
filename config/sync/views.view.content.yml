@@ -10,11 +10,10 @@ _core:
 id: content
 label: Content
 module: node
-description: 'Encontrar y gestionar contenido.'
+description: 'Encontrar y administrar contenido.'
 tag: default
 base_table: node_field_data
 base_field: nid
-core: 8.x
 display:
   default:
     display_options:
@@ -31,7 +30,7 @@ display:
         options:
           submit_button: Filtro
           reset_button: true
-          reset_button_label: Reiniciar
+          reset_button_label: Restablecer
           exposed_sorts_label: 'Ordenar por'
           expose_sort_order: true
           sort_asc_label: Asc
@@ -41,7 +40,7 @@ display:
         options:
           items_per_page: 50
           tags:
-            previous: '‹ Previous'
+            previous: '‹ Anterior'
             next: 'Siguiente >'
             first: '« Primero'
             last: 'Último »'
@@ -365,6 +364,9 @@ display:
           plugin_id: node_status
           group: 1
           entity_type: node
+          expose:
+            operator_limit_selection: false
+            operator_list: {  }
         status:
           id: status
           table: node_field_data
@@ -388,6 +390,8 @@ display:
             multiple: false
             remember_roles:
               authenticated: authenticated
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: true
           group_info:
             label: 'Estado de publicación'
@@ -437,6 +441,8 @@ display:
               anonymous: '0'
               administrator: '0'
             reduce: false
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -477,6 +483,9 @@ display:
               authenticated: authenticated
               anonymous: '0'
               administrator: '0'
+            placeholder: ''
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -518,6 +527,8 @@ display:
               anonymous: '0'
               administrator: '0'
             reduce: false
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -559,7 +570,7 @@ display:
           1: AND
       display_extenders: {  }
     display_plugin: default
-    display_title: Maestro
+    display_title: Máster
     id: default
     position: 0
     cache_metadata:
@@ -588,7 +599,7 @@ display:
       tab_options:
         type: normal
         title: Content
-        description: 'Buscar y administrar contenido'
+        description: 'Encontrar y administrar contenido'
         menu_name: admin
         weight: -10
       display_extenders: {  }

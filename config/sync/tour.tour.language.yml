@@ -22,7 +22,7 @@ tips:
   language-add:
     id: language-add
     plugin: text
-    label: 'Añadiendo idiomas'
+    label: 'Adding languages'
     body: '<p>Para añadir más idiomas a su sitio, haga clic en el botón "Añadir idioma".</p><p>Los idiomas añadidos se mostrarán en la lista de idiomas y pueden entonces ser editados o borrados.</p>'
     weight: 2
     attributes:
@@ -39,7 +39,7 @@ tips:
     id: language-default
     plugin: text
     label: 'Establecer un idioma por defecto'
-    body: '<p>Usted puede cambiar el idioma predeterminado del sitio por la elección de uno de sus idiomas configurados por defecto. El sitio utilizará el idioma predeterminado en situaciones en las que se haga otra opción que una lengua debe regularse, por ejemplo, como el idioma de la interfaz de pantalla.</p>'
+    body: '<p>Se puede cambiar el idioma predeterminado del sitio por uno de los idiomas configurados por defecto. El sitio utilizará el idioma predeterminado cuando se necesite tener seleccionado un idioma pero no se haya elegido ninguno. Como por ejemplo el idioma de la interfaz mostrada.</p>'
     weight: 4
     attributes:
       data-class: js-form-item-site-default-language

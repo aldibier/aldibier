@@ -60,6 +60,8 @@ content:
   links:
     weight: 100
     region: content
+    settings: {  }
+    third_party_settings: {  }
   upload:
     label: hidden
     weight: 0

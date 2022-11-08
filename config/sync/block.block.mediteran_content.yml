@@ -1,0 +1,22 @@
+uuid: acf3c192-6c18-4f16-9276-1631609f5edc
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - mediteran
+_core:
+  default_config_hash: L1EgH8h9eCrr_hS4e_xWPNibUxZ2y6u3l5l1AkVBRKc
+id: mediteran_content
+theme: mediteran
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

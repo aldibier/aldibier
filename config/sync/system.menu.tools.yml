@@ -6,5 +6,5 @@ _core:
   default_config_hash: BCM-vV1zzRaLHN18dqAR_CuGOj8AFJvTx7BKl_8Gcxc
 id: tools
 label: Herramientas
-description: 'Enlaces de herramientas de usuario, incluso adicionados por los módulos'
+description: 'Enlaces de herramientas de usuario, a menudo añadidas por módulos'
 locked: true

@@ -16,21 +16,21 @@ tips:
   locale-overview:
     id: locale-overview
     plugin: text
-    label: 'Traducción de la Interfaz de usuario'
+    label: 'Traducción de la interfaz de usuario'
     body: 'Esta página le permite traducir la interfaz de usuario o modificar traducciones existentes. Si ha instalado su sitio inicialmente en inglés, debe añadir primero otro idioma en la <a href="[site:url]/admin/config/regional/language">página de Idiomas</a>, para poder usar esta página.'
     weight: 1
   locale-language:
     id: locale-language
     plugin: text
-    label: 'Idioma de traducción'
-    body: 'Seleccione el idioma que desee traducir.'
+    label: 'Translation language'
+    body: 'Elija el idioma que quiere traducir.'
     weight: 2
     attributes:
       data-id: edit-langcode
   locale-search:
     id: locale-search
     plugin: text
-    label: Buscar
+    label: Search
     body: 'Intruduzca la palabra u oración específica que usted desea traducir, también puede escribir solamente una parte de la palabra.'
     weight: 3
     attributes:
@@ -39,7 +39,7 @@ tips:
     id: locale-filter
     plugin: text
     label: 'Filtrar la búsqueda'
-    body: 'Puede buscar cadenas no traducidas si quiere traducir algo que todavía no está traducido. Si quiere modificar una traducción exitente, podría querer buscar solo cadenas traducidas'
+    body: 'Puede buscar cadenas no traducidas si quiere traducir algo que todavía no está traducido. Si quiere modificar una traducción exitente, podría querer buscar solo cadenas traducidas.'
     weight: 4
     attributes:
       data-id: edit-translation

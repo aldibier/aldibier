@@ -1,0 +1,22 @@
+uuid: e65fd8e0-c205-47b3-94aa-16868d1c739a
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - writer
+_core:
+  default_config_hash: _Fv4PTYuNrH6YbqHwnb3FClioAJ1P88WAnuQD0r-NSo
+id: writer_content
+theme: writer
+region: content
+weight: -2
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

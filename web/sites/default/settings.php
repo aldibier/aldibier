@@ -760,6 +760,32 @@ $settings['file_scan_ignore_directories'] = [
  * Keep this code block at the end of this file to take full effect.
  */
 
+if (getenv('LANDO') === 'ON') {
+  $lando_info = json_decode(getenv('LANDO_INFO'), TRUE);
+  $settings['trusted_host_patterns'] = ['.*'];
+  $settings['hash_salt'] = md5(getenv('LANDO_HOST_IP'));
+  $databases['default']['default'] = [
+    'driver' => 'mysql',
+    'database' => $lando_info['database']['creds']['database'],
+    'username' => $lando_info['database']['creds']['user'],
+    'password' => $lando_info['database']['creds']['password'],
+    'host' => $lando_info['database']['internal_connection']['host'],
+    'port' => $lando_info['database']['internal_connection']['port'],
+  ];
+
+  // Stage File Proxy
+  $config['stage_file_proxy.settings']['origin'] = 'www.aldibier.com';
+
+  $settings['file_private_path'] = 'sites/default/files/private';
+  $settings['container_yamls'][] = DRUPAL_ROOT . '/sites/development.services.yml';
+  $config['system.performance']['css']['preprocess'] = FALSE;
+  $config['system.performance']['js']['preprocess'] = FALSE;
+  $settings['cache']['bins']['render'] = 'cache.backend.null';
+  $settings['cache']['bins']['dynamic_page_cache'] = 'cache.backend.null';
+  $settings['cache']['bins']['page'] = 'cache.backend.null';
+
+}
+
 if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
   include $app_root . '/' . $site_path . '/settings.local.php';
 }

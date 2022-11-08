@@ -13,12 +13,11 @@ description: 'Encontrar y gestionar qué personas interactúan con su sitio.'
 tag: default
 base_table: users_field_data
 base_field: uid
-core: 8.x
 display:
   default:
     display_plugin: default
     id: default
-    display_title: Maestro
+    display_title: Máster
     position: 0
     display_options:
       access:
@@ -40,7 +39,7 @@ display:
         options:
           submit_button: Filtro
           reset_button: true
-          reset_button_label: Reiniciar
+          reset_button_label: Restablecer
           exposed_sorts_label: 'Ordenar por'
           expose_sort_order: true
           sort_asc_label: Asc
@@ -53,7 +52,7 @@ display:
           id: 0
           total_pages: 0
           tags:
-            previous: '‹ Previous'
+            previous: '‹ Anterior'
             next: 'Siguiente >'
             first: '« Primero'
             last: 'Último »'
@@ -358,7 +357,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: 'Miembro durante'
+          label: 'Miembro desde hace'
           exclude: false
           alter:
             alter_text: false
@@ -592,7 +591,7 @@ display:
           exposed: true
           expose:
             operator_id: combine_op
-            label: 'Nombre o correo contienen'
+            label: 'El nombre o correo electrónico contiene'
             description: ''
             use_operator: false
             operator: combine_op
@@ -604,6 +603,9 @@ display:
               authenticated: authenticated
               anonymous: '0'
               administrator: '0'
+            placeholder: ''
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -646,6 +648,8 @@ display:
               anonymous: '0'
               administrator: '0'
             reduce: false
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -686,6 +690,8 @@ display:
               anonymous: '0'
               administrator: '0'
             reduce: false
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -725,6 +731,8 @@ display:
               authenticated: authenticated
               anonymous: '0'
               administrator: '0'
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: true
           group_info:
             label: Estado
@@ -771,6 +779,8 @@ display:
             multiple: false
             remember_roles:
               authenticated: authenticated
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -812,6 +822,11 @@ display:
             multiple: false
             remember_roles:
               authenticated: authenticated
+            placeholder: ''
+            min_placeholder: ''
+            max_placeholder: ''
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -853,7 +868,7 @@ display:
           admin_label: ''
           empty: true
           tokenize: false
-          content: 'No hay personas disponibles.'
+          content: 'No people available.'
           plugin_id: text_custom
       use_more: false
       use_more_always: false
@@ -900,7 +915,7 @@ display:
       tab_options:
         type: normal
         title: Usuarios
-        description: 'Gestionar cuentas de usuario, roles y permisos.'
+        description: 'Gestionar cuentas, roles y permisos de usuarios.'
         menu_name: admin
         weight: 0
       defaults:

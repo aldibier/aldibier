@@ -38,7 +38,7 @@ tips:
   language-edit-direction:
     id: language-edit-direction
     plugin: text
-    label: 'Dirección del idioma'
+    label: 'Dirección de escritura del idioma'
     body: '<p>Escoja si el idioma es un idioma de "De izquierda a derecha" o de "De derecha a izquierda".</p><p>Fijese que no todos los temas soportan diseños de "De derecha a izquierda", por lo que debe probarlos antes si piensa usarlos.</p>'
     weight: 4
     attributes:

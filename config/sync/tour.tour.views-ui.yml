@@ -19,7 +19,7 @@ tips:
     id: views-main
     plugin: text
     label: 'Administrar las configuraciones de la vista'
-    body: 'Ver o editar la configuración'
+    body: 'Ver o editar la configuración.'
     weight: 1
   views-ui-displays:
     id: views-ui-displays
@@ -58,7 +58,7 @@ tips:
     id: views-ui-filter
     plugin: text
     label: 'Filtrar su vista'
-    body: 'Adicionar filtros para limitar los resultados en la salida. E.g., para mostrar sólo contenido que está publicado, Usted debería adicionar un filtro para <em>Publicado</em> y seleccionar <em>Sí</em>'
+    body: 'Adicionar filtros para limitar los resultados en la salida. E.g., para mostrar sólo contenido que está publicado, Usted debería adicionar un filtro para <em>Publicado</em> y seleccionar <em>Sí</em>.'
     weight: 6
     attributes:
       data-class: views-ui-display-tab-bucket.filter
@@ -66,14 +66,14 @@ tips:
     id: views-ui-filter-operations
     plugin: text
     label: 'Acciones de filtrado'
-    body: 'Adicionar, reordenar o eliminar filtros.'
+    body: 'Añadir, reordenar o eliminar filtros.'
     weight: 7
     attributes:
       data-class: 'views-ui-display-tab-bucket.filter .dropbutton-widget'
   views-ui-sorts:
     id: views-ui-sorts
     plugin: text
-    label: 'Criterio de ordenación'
+    label: 'Criterios de ordenación'
     body: 'Controla el orden en que los resultados son mostrados. Haga clic en una regla de clasificación activa para configurarla.'
     weight: 8
     attributes:
@@ -82,7 +82,7 @@ tips:
     id: views-ui-sorts-operations
     plugin: text
     label: 'Actiones de ordenamiento'
-    body: 'Adicionar, reordenar o eliminar reglas de ordenamiento.'
+    body: 'Añadir, reordenar o eliminar reglas de ordenación.'
     weight: 9
     attributes:
       data-class: 'views-ui-display-tab-bucket.sort .dropbutton-widget'

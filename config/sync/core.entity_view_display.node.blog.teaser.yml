@@ -6,6 +6,8 @@ dependencies:
     - core.entity_view_mode.node.teaser
     - field.field.node.blog.body
     - field.field.node.blog.field_archivo
+    - field.field.node.blog.field_disqus_comments
+    - field.field.node.blog.field_meta_etiquetas
     - field.field.node.blog.field_tema
     - field.field.node.blog.upload
     - node.type.blog
@@ -28,8 +30,12 @@ content:
   links:
     weight: 100
     region: content
+    settings: {  }
+    third_party_settings: {  }
 hidden:
   field_archivo: true
+  field_disqus_comments: true
+  field_meta_etiquetas: true
   field_tema: true
   langcode: true
   upload: true
