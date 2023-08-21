@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "fb607539b5fd85e9ca284a9e85cd9155",
+    "content-hash": "5c029548ea7d400929ff27655a073f1d",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1926,64 +1926,6 @@
             "time": "2023-07-27T18:11:59+00:00"
         },
         {
-            "name": "drupal/adminimal_theme",
-            "version": "1.7.0",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/adminimal_theme.git",
-                "reference": "8.x-1.7"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/adminimal_theme-8.x-1.7.zip",
-                "reference": "8.x-1.7",
-                "shasum": "0fe020fecab6a1f6d877f2e622fb9f916ada52bb"
-            },
-            "require": {
-                "drupal/core": "^9.3 || ^10",
-                "drupal/seven": "~1.0"
-            },
-            "type": "drupal-theme",
-            "extra": {
-                "drupal": {
-                    "version": "8.x-1.7",
-                    "datestamp": "1691504486",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "authors": [
-                {
-                    "name": "ANDiTKO",
-                    "homepage": "https://www.drupal.org/user/1428124"
-                },
-                {
-                    "name": "andrey.troeglazov",
-                    "homepage": "https://www.drupal.org/user/3145389"
-                },
-                {
-                    "name": "realityloop",
-                    "homepage": "https://www.drupal.org/user/139189"
-                },
-                {
-                    "name": "rjjakes",
-                    "homepage": "https://www.drupal.org/user/3457245"
-                }
-            ],
-            "description": "Drupal administration theme with modern minimalist design.",
-            "homepage": "https://www.drupal.org/project/adminimal_theme",
-            "support": {
-                "source": "https://git.drupalcode.org/project/adminimal_theme",
-                "issues": "https://www.drupal.org/project/issues/adminimal_theme"
-            }
-        },
-        {
             "name": "drupal/autosave_form",
             "version": "1.4.0",
             "source": {
@@ -2896,66 +2838,6 @@
             }
         },
         {
-            "name": "drupal/mediteran",
-            "version": "1.30.0",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/mediteran.git",
-                "reference": "8.x-1.30"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/mediteran-8.x-1.30.zip",
-                "reference": "8.x-1.30",
-                "shasum": "5945a30624e539ac739adaef423feb4ba88808f7"
-            },
-            "require": {
-                "drupal/core": "^8.8 || ^9 || ^10"
-            },
-            "type": "drupal-theme",
-            "extra": {
-                "drupal": {
-                    "version": "8.x-1.30",
-                    "datestamp": "1690788548",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "bataboza",
-                    "homepage": "https://www.drupal.org/user/3581173"
-                },
-                {
-                    "name": "diqidoq",
-                    "homepage": "https://www.drupal.org/user/1001934"
-                },
-                {
-                    "name": "doxigo",
-                    "homepage": "https://www.drupal.org/user/1331334"
-                },
-                {
-                    "name": "Hosisam",
-                    "homepage": "https://www.drupal.org/user/3449435"
-                },
-                {
-                    "name": "szeidler",
-                    "homepage": "https://www.drupal.org/user/767652"
-                }
-            ],
-            "description": "Mediteran is a clean and simple administration theme designed by <a href=\"https://drupalation.com\" target=\"_blank\">Drupalation</a> and supported by <a href=\"https://ramsalt.com\" target=\"_blank\">Ramsalt</a>.",
-            "homepage": "https://www.drupal.org/project/mediteran",
-            "support": {
-                "source": "https://git.drupalcode.org/project/mediteran"
-            }
-        },
-        {
             "name": "drupal/metatag",
             "version": "1.26.0",
             "source": {
@@ -3162,66 +3044,6 @@
             }
         },
         {
-            "name": "drupal/seven",
-            "version": "1.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/seven.git",
-                "reference": "1.0.0"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/seven-1.0.0.zip",
-                "reference": "1.0.0",
-                "shasum": "88e86926388c7e6cf66b0502d13a0470ce2399cd"
-            },
-            "require": {
-                "drupal/core": "^9 || ^10"
-            },
-            "type": "drupal-theme",
-            "extra": {
-                "drupal": {
-                    "version": "1.0.0",
-                    "datestamp": "1683652106",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "bnjmnm",
-                    "homepage": "https://www.drupal.org/user/2369194"
-                },
-                {
-                    "name": "lauriii",
-                    "homepage": "https://www.drupal.org/user/1078742"
-                },
-                {
-                    "name": "mcrittenden",
-                    "homepage": "https://www.drupal.org/user/420631"
-                },
-                {
-                    "name": "mrfelton",
-                    "homepage": "https://www.drupal.org/user/305669"
-                },
-                {
-                    "name": "TravisCarden",
-                    "homepage": "https://www.drupal.org/user/236758"
-                }
-            ],
-            "description": "The Seven theme from Drupal 8/9 moved to contrib",
-            "homepage": "https://www.drupal.org/project/seven",
-            "support": {
-                "source": "https://git.drupalcode.org/project/seven"
-            }
-        },
-        {
             "name": "drupal/token",
             "version": "1.12.0",
             "source": {
@@ -3363,58 +3185,6 @@
             "homepage": "http://drupal.org/project/upgrade_status",
             "support": {
                 "source": "https://git.drupalcode.org/project/upgrade_status"
-            }
-        },
-        {
-            "name": "drupal/writer",
-            "version": "2.6.0",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/writer.git",
-                "reference": "8.x-2.6"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/writer-8.x-2.6.zip",
-                "reference": "8.x-2.6",
-                "shasum": "238980d106e5cd9cce7407ac149b57e2acef72a5"
-            },
-            "require": {
-                "drupal/core": "^8.8 || ^9"
-            },
-            "type": "drupal-theme",
-            "extra": {
-                "drupal": {
-                    "version": "8.x-2.6",
-                    "datestamp": "1645480381",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "bryanbraun",
-                    "homepage": "https://www.drupal.org/user/1410008"
-                },
-                {
-                    "name": "sergei_semipiadniy",
-                    "homepage": "https://www.drupal.org/user/2910879"
-                },
-                {
-                    "name": "zengenuity",
-                    "homepage": "https://www.drupal.org/user/326925"
-                }
-            ],
-            "description": "A minimalist theme designed for a developer's personal blog.",
-            "homepage": "https://www.drupal.org/project/writer",
-            "support": {
-                "source": "https://git.drupalcode.org/project/writer"
             }
         },
         {
