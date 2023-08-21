@@ -20,16 +20,16 @@ bundle: blog
 mode: rss
 content:
   links:
+    settings: {  }
+    third_party_settings: {  }
     weight: 100
     region: content
-    settings: {  }
-    third_party_settings: {  }
   upload:
-    label: hidden
-    weight: 0
     type: file_table
+    label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 0
     region: content
 hidden:
   body: true

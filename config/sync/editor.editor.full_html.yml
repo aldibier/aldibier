@@ -52,13 +52,7 @@ settings:
             - EmbedSemantic
             - ShowBlocks
             - Source
-  plugins:
-    stylescombo:
-      styles: ''
-    language:
-      language_list: un
-    autoembed:
-      status: ''
+  plugins: {  }
 image_upload:
   status: true
   scheme: public

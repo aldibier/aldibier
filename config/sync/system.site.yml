@@ -1,3 +1,6 @@
+_core:
+  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI
+langcode: es
 uuid: 370e45be-de7d-4e46-8732-40fe43e76090
 name: 'El Blog de Hal'
 mail: me@aldibier.com
@@ -8,8 +11,5 @@ page:
   front: /historias
 admin_compact_mode: false
 weight_select_max: 100
-langcode: es
 default_langcode: es
-_core:
-  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI
 mail_notification: ''

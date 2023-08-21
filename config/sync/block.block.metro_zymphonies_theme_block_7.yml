@@ -17,8 +17,8 @@ plugin: 'block_content:90349834-d0e2-49a9-ab74-9aa00c6e7d53'
 settings:
   id: 'block_content:90349834-d0e2-49a9-ab74-9aa00c6e7d53'
   label: ''
-  provider: block_content
   label_display: '0'
+  provider: block_content
   status: true
   info: ''
   view_mode: full

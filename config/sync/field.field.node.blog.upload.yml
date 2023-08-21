@@ -18,10 +18,10 @@ translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:
-  max_filesize: '1 MB'
-  file_extensions: 'jpg jpeg gif png txt doc xls pdf ppt pps odt ods odp'
-  file_directory: ''
-  description_field: true
   handler: 'default:file'
   handler_settings: {  }
+  file_directory: ''
+  file_extensions: 'jpg jpeg gif png txt doc xls pdf ppt pps odt ods odp'
+  max_filesize: '1 MB'
+  description_field: true
 field_type: file

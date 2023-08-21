@@ -1,7 +1,14 @@
 uuid: cd4ef01b-0293-4069-8a1d-600bae933c79
 langcode: es
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - comment
+    - contact
+    - disqus
+    - node
+    - search
+    - system
 _core:
   default_config_hash: dJ0L2DNSj5q6XVZAGsuVDpJTh5UeYkIPwKrUOOpr8YI
 id: authenticated
@@ -11,21 +18,10 @@ is_admin: false
 permissions:
   - 'access comments'
   - 'access content'
-  - 'access devel information'
-  - 'access news feeds'
   - 'access site-wide contact form'
   - 'access user contact forms'
-  - 'collapse format fieldset by default'
-  - 'collapsible format selection'
-  - 'execute php code'
   - 'post comments'
   - 'search content'
-  - 'show advertisements'
-  - 'show format selection for blocks'
-  - 'show format selection for comments'
-  - 'show format selection for nodes'
-  - 'show format tips'
-  - 'show more format tips link'
   - 'skip comment approval'
   - 'toggle disqus comments'
   - 'view disqus comments'
