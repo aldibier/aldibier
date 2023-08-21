@@ -4,6 +4,6 @@ config:
   webroot: web
 services:
   appserver:
-    type: php:7.4
+    type: php:8.1
     build_as_root:
       - apt update && apt install libgmp-dev -y && docker-php-ext-install gmp
