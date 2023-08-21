@@ -9,7 +9,6 @@ dependencies:
     - node.type.story
   module:
     - block
-    - comment
     - contact
     - filter
     - language
@@ -27,7 +26,6 @@ weight: 0
 is_admin: null
 permissions:
   - 'access administration pages'
-  - 'access comments'
   - 'access content'
   - 'access content overview'
   - 'access site in maintenance mode'
@@ -35,7 +33,6 @@ permissions:
   - 'access site-wide contact form'
   - 'access user profiles'
   - 'administer blocks'
-  - 'administer comments'
   - 'administer contact forms'
   - 'administer content types'
   - 'administer filters'
@@ -69,9 +66,7 @@ permissions:
   - 'edit own page content'
   - 'edit own story content'
   - 'notify of path changes'
-  - 'post comments'
   - 'search content'
-  - 'skip comment approval'
   - 'translate interface'
   - 'use advanced search'
   - 'view the administration theme'

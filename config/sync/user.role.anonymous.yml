@@ -3,7 +3,6 @@ langcode: es
 status: true
 dependencies:
   module:
-    - comment
     - contact
     - disqus
     - search
@@ -15,11 +14,8 @@ label: 'anonymous user'
 weight: 0
 is_admin: false
 permissions:
-  - 'access comments'
   - 'access content'
   - 'access site-wide contact form'
-  - 'post comments'
   - 'search content'
-  - 'skip comment approval'
   - 'toggle disqus comments'
   - 'view disqus comments'
