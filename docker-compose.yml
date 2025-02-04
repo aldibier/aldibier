@@ -14,7 +14,7 @@ services:
       PHP_FPM_PM_MAX_CHILDREN: 10 # PROD: 30
 #    command: sh -c ""
     volumes:
-      - ../code:/var/www/html
+      - ../code:/var/www/code
       - ../files/data/files:/var/www/html/web/sites/default/files
     networks:
       - dokploy-network
