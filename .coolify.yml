@@ -1,0 +1,45 @@
+# Configuración de Coolify para Drupal 11
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "${PORT:-8080}:8080"
+    environment:
+      # Base de datos
+      DB_HOST: ${DB_HOST}
+      DB_PORT: ${DB_PORT:-3306}
+      DB_NAME: ${DB_NAME}
+      DB_USER: ${DB_USER}
+      DB_PASSWORD: ${DB_PASSWORD}
+      
+      # Drupal
+      DRUPAL_HASH_SALT: ${DRUPAL_HASH_SALT}
+      DRUPAL_CONFIG_SYNC_DIRECTORY: ${DRUPAL_CONFIG_SYNC_DIRECTORY:-../config/sync}
+      
+      # PHP
+      PHP_MEMORY_LIMIT: ${PHP_MEMORY_LIMIT:-256M}
+      PHP_MAX_EXECUTION_TIME: ${PHP_MAX_EXECUTION_TIME:-300}
+      
+      # Composer
+      COMPOSER_MEMORY_LIMIT: "-1"
+      COMPOSER_ALLOW_SUPERUSER: "1"
+    volumes:
+      - drupal_files:/var/www/html/web/sites/default/files
+      - drupal_private:/var/www/html/private
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8080/"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+    restart: unless-stopped
+
+volumes:
+  drupal_files:
+    driver: local
+  drupal_private:
+    driver: local
