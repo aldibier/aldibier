@@ -1,0 +1,11 @@
+# Ignorar archivos innecesarios en el build
+.git
+.gitignore
+.ddev
+*.md
+!README.md
+tmp
+backup-*.sql.gz
+*.log
+node_modules
+.DS_Store

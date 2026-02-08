@@ -2,22 +2,7 @@
 nixPkgs = [
   "php83",
   "php83Packages.composer",
-  "nodejs_20",
-  "yarn"
-]
-nixLibs = [
-  "libpng",
-  "libjpeg",
-  "freetype",
-  "libzip",
-  "icu",
-  "oniguruma",
-  "libxml2",
-  "libxslt",
-  "gd"
-]
-nixOverlays = [
-  "https://github.com/railwayapp/nix-php-extensions/archive/main.tar.gz"
+  "nodejs_20"
 ]
 
 [phases.install]
@@ -25,13 +10,6 @@ cmds = [
   "composer install --no-dev --optimize-autoloader --no-interaction --prefer-dist",
   "mkdir -p web/sites/default/files",
   "chmod -R 775 web/sites/default/files"
-]
-
-[phases.build]
-cmds = [
-  "echo 'Build phase - Drupal assets'",
-  "# Aquí puedes agregar compilación de assets si es necesario",
-  "# npm install && npm run build"
 ]
 
 [start]

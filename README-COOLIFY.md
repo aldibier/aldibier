@@ -15,7 +15,7 @@ Coolify detectará automáticamente `nixpacks.toml` y usará Nixpacks para el bu
 
 2. **Coolify detectará automáticamente**:
    - PHP 8.3
-   - Composer
+   - Composer (se ejecutará en la raíz)
    - Node.js 20
    - Configuración de Drupal
 
