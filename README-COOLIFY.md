@@ -4,29 +4,53 @@ Este proyecto está configurado para desplegarse en Coolify usando Nixpacks o Do
 
 ## 🚀 Despliegue Rápido
 
-### Opción 1: Usando Nixpacks (Recomendado)
+### ⚠️ IMPORTANTE: Problema Conocido con Nixpacks
 
-Coolify detectará automáticamente `nixpacks.toml` y usará Nixpacks para el build.
+Si ves el error `vendor/autoload.php: No such file or directory`, significa que `composer install` no se ejecutó. 
+
+**Solución:** Usa el Dockerfile en lugar de Nixpacks (ver instrucciones abajo).
+
+### Opción 1: Usando Dockerfile (Recomendado para Drupal)
+
+El Dockerfile proporciona control total y garantiza que `composer install` se ejecute correctamente.
 
 1. **Conecta tu repositorio en Coolify**
    - Ve a tu instancia de Coolify
    - Crea un nuevo proyecto
    - Conecta este repositorio Git
 
-2. **Coolify detectará automáticamente**:
-   - PHP 8.3
-   - Composer (se ejecutará en la raíz)
-   - Node.js 20
-   - Configuración de Drupal
+2. **Configura Build Pack**
+   - En la configuración de la aplicación
+   - Busca "Build Pack" o "Builder"
+   - Selecciona **"Dockerfile"**
 
 3. **Configura las variables de entorno** (ver sección abajo)
 
 4. **Despliega**
-   - Coolify construirá y desplegará automáticamente
+   - Coolify construirá usando el Dockerfile
+   - El build tomará ~5-10 minutos la primera vez
 
-### Opción 2: Usando Dockerfile
+### Opción 2: Usando Nixpacks (Experimental)
 
-Si Nixpacks no funciona, Coolify usará el `Dockerfile` incluido.
+### Opción 2: Usando Nixpacks (Experimental)
+
+⚠️ **Advertencia:** Nixpacks puede no detectar correctamente la estructura del proyecto.
+
+Coolify detectará automáticamente `nixpacks.toml` y usará Nixpacks para el build.
+
+1. **Conecta tu repositorio en Coolify**
+
+2. **CRÍTICO: Verifica Base Directory**
+   - En Coolify, ve a la configuración de tu aplicación
+   - Busca "Base Directory" o "Build Directory"
+   - **Debe estar VACÍO o ser `/`** (raíz del proyecto)
+   - Si está configurado como `/web`, cámbialo
+
+3. **Configura las variables de entorno** (ver sección abajo)
+
+4. **Despliega y verifica los logs**
+   - Si ves `composer install` ejecutándose, ¡perfecto!
+   - Si ves el error de `vendor/autoload.php`, cambia a Dockerfile (Opción 1)
 
 ## 🔧 Variables de Entorno Requeridas
 

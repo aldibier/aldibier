@@ -72,8 +72,12 @@ RUN mkdir -p web/sites/default/files \
     && chmod -R 775 web/sites/default/files \
     && chown -R www-data:www-data web/sites/default/files
 
-# Exponer puerto
-EXPOSE 8080
+# Copiar y dar permisos al script de entrada
+COPY docker/entrypoint.sh /entrypoint.sh
+RUN chmod +x /entrypoint.sh
+
+# Exponer puerto (Coolify usa la variable PORT)
+EXPOSE ${PORT:-8080}
 
 # Comando de inicio
-CMD ["/usr/bin/supervisord", "-c", "/etc/supervisor/conf.d/supervisord.conf"]
+CMD ["/entrypoint.sh"]

@@ -12,9 +12,8 @@ cmds = [
   "chmod -R 775 web/sites/default/files"
 ]
 
-[start]
-cmd = "php -S 0.0.0.0:$PORT -t web"
-
 [variables]
 COMPOSER_MEMORY_LIMIT = "-1"
 COMPOSER_ALLOW_SUPERUSER = "1"
+NIXPACKS_PHP_ROOT_DIR = "/app/web"
+NIXPACKS_PHP_FALLBACK_PATH = "/index.php"
