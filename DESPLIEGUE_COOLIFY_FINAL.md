@@ -1,17 +1,13 @@
-# 🚀 Despliegue en Coolify - Configuración Final
+# 🚀 Despliegue en Coolify - Guía Completa
 
-## ✅ Configuración Actual
+## ✅ Configuración del Proyecto
 
-### En Coolify:
-- **Base Directory**: `/` ✅ (raíz del proyecto)
-- **Publish Directory**: `/web` ✅ (donde está index.php)
-- **Build Pack**: Nixpacks ✅
+Este proyecto usa **Nixpacks con Nginx + PHP-FPM** para despliegue en Coolify.
 
-### En el Proyecto:
-- ✅ `nixpacks.toml` configurado correctamente
-- ✅ `settings.local.php` creado (carga automáticamente desde settings.php)
-- ✅ `composer.json` en la raíz
-- ✅ Estructura Drupal en `/web`
+### Archivos de Configuración:
+- ✅ `nixpacks.toml` - Configuración de Nixpacks
+- ✅ `nginx.template.conf` - Configuración de Nginx para Drupal
+- ✅ `settings.local.php` - Configuración de Drupal (carga automáticamente)
 
 ## 📋 Pasos para Desplegar
 
@@ -19,217 +15,173 @@
 
 ```bash
 git add .
-git commit -m "Configure Coolify deployment with settings.local.php"
+git commit -m "Configure Nixpacks with Nginx + PHP-FPM for Drupal"
 git push
 ```
 
-### 2. Configurar Variables de Entorno en Coolify
+### 2. Conectar Repositorio en Coolify
 
-Ve a tu aplicación en Coolify → **Environment Variables** y agrega:
+1. Ve a tu instancia de Coolify
+2. Crea un nuevo proyecto
+3. Conecta este repositorio Git
+4. Configura:
+   - **Base Directory**: `/`
+   - **Publish Directory**: `/web` (opcional)
+   - **Build Pack**: Nixpacks (auto-detectado)
 
-#### Variables Requeridas:
+### 3. Configurar Variables de Entorno
+
+En Coolify → Environment Variables:
+
+#### Requeridas:
 
 ```bash
-# Base de datos
 DB_HOST=tu-servidor-mysql
 DB_PORT=3306
 DB_NAME=aldibier
 DB_USER=drupal
 DB_PASSWORD=tu-password-seguro
-
-# Drupal
-DRUPAL_HASH_SALT=genera-un-hash-aleatorio-aqui
+DRUPAL_HASH_SALT=genera-hash-aqui
 DRUPAL_ENV=production
 ```
 
-#### Generar Hash Salt:
-
+Genera el hash salt:
 ```bash
 php -r 'echo bin2hex(random_bytes(32)) . "\n";'
 ```
 
-O usa este comando en tu terminal:
-```bash
-openssl rand -hex 32
-```
-
-#### Variables Opcionales:
+#### Opcionales:
 
 ```bash
-# Configuración adicional
 DRUPAL_CONFIG_SYNC_DIRECTORY=../config/sync
 DRUPAL_TRUSTED_HOST_PATTERNS=^tu-dominio\.com$,^www\.tu-dominio\.com$
-
-# Límites PHP
 PHP_MEMORY_LIMIT=256M
 PHP_MAX_EXECUTION_TIME=300
-
-# SMTP (si usas correo)
-SMTP_HOST=smtp.gmail.com
-SMTP_PORT=587
-SMTP_USERNAME=tu-email@gmail.com
-SMTP_PASSWORD=tu-password
-SMTP_PROTOCOL=tls
-
-# Redis (si usas caché)
-REDIS_HOST=redis
-REDIS_PORT=6379
-REDIS_PASSWORD=tu-redis-password
 ```
 
-### 3. Crear Base de Datos en Coolify
+### 4. Crear Base de Datos
 
-**Opción A: Usar servicio de base de datos de Coolify**
+**Opción A:** En Coolify, agrega un servicio MySQL/MariaDB
 
-1. En Coolify, ve a tu proyecto
-2. Click en **"Add Service"** → **"MySQL"** o **"MariaDB"**
-3. Configura el servicio
-4. Coolify creará automáticamente las variables `DB_HOST`, `DB_NAME`, etc.
+**Opción B:** Usa una base de datos externa
 
-**Opción B: Usar base de datos externa**
+### 5. Desplegar
 
-Configura manualmente las variables `DB_*` con los datos de tu servidor.
+1. Click en **"Deploy"**
+2. Espera 3-5 minutos
+3. Verifica en logs:
+   - `composer install ... Installing dependencies`
+   - `Starting Nginx...`
 
-### 4. Redeploy
-
-1. En Coolify, click en **"Redeploy"**
-2. Espera a que termine el build (3-5 minutos)
-3. Verifica en los logs que veas:
-
-```
-[phases.install]
-composer install --no-dev --optimize-autoloader
-Loading composer repositories with package information
-Installing dependencies from lock file
-Package operations: 150 installs, 0 updates, 0 removals
-  - Installing drupal/core (11.3.3): Extracting archive
-  ...
-Generating optimized autoload files
-```
-
-### 5. Importar Base de Datos
-
-Una vez desplegado, importa tu base de datos:
+### 6. Importar Base de Datos
 
 ```bash
-# Opción 1: Desde tu máquina local
 mysql -h tu-servidor-db -u drupal -p aldibier < aldibier.sql
-
-# Opción 2: Usando Coolify CLI (si está disponible)
-coolify exec app -- mysql -h $DB_HOST -u $DB_USER -p$DB_PASSWORD $DB_NAME < aldibier.sql
 ```
 
-### 6. Verificar el Sitio
+### 7. Verificar
 
-1. Visita tu dominio en el navegador
-2. Deberías ver tu sitio Drupal cargando correctamente
-3. Si ves errores, revisa los logs (ver sección Troubleshooting)
+Visita tu dominio. Prueba:
+- `/` - Página principal
+- `/user/login` - Login
+- `/core/install.php` - Instalador (si es nuevo)
 
 ## 🔍 Verificación Post-Despliegue
 
-### Verificar que vendor existe:
+### Verificar servicios:
 
 ```bash
+# Nginx
+coolify exec app -- ps aux | grep nginx
+
+# PHP-FPM
+coolify exec app -- ps aux | grep php-fpm
+
+# Vendor directory
 coolify exec app -- ls -la /app/vendor
 ```
 
-### Verificar Drupal:
+### Comandos Drush:
 
 ```bash
+# Estado del sitio
 coolify exec app -- /app/vendor/bin/drush status
-```
 
-### Limpiar caché:
-
-```bash
+# Limpiar caché
 coolify exec app -- /app/vendor/bin/drush cr
-```
 
-### Ejecutar actualizaciones de base de datos:
-
-```bash
+# Actualizar base de datos
 coolify exec app -- /app/vendor/bin/drush updatedb -y
+
+# Ejecutar cron
+coolify exec app -- /app/vendor/bin/drush cron
 ```
 
 ## 🐛 Troubleshooting
 
+### Error: "502 Bad Gateway"
+
+PHP-FPM no está corriendo o no puede conectarse.
+
+```bash
+coolify exec app -- ps aux | grep php-fpm
+coolify exec app -- ls -la /var/run/php-fpm.sock
+```
+
 ### Error: "vendor/autoload.php not found"
 
-Esto significa que `composer install` no se ejecutó. Verifica:
+Composer install no se ejecutó.
 
-1. **Base Directory** en Coolify debe ser `/` (no `/web`)
-2. En los logs, busca `composer install` y verifica que se ejecutó
-3. Si el problema persiste, cambia a Dockerfile (ver `SOLUCION_VENDOR_FALTANTE.md`)
+**Solución:**
+1. Verifica que Base Directory sea `/` en Coolify
+2. Revisa los logs de build
+3. Busca errores en `composer install`
 
 ### Error: "Database connection failed"
 
-1. Verifica que las variables de entorno estén configuradas correctamente
-2. Verifica que el servicio de base de datos esté corriendo
-3. Prueba la conexión manualmente:
-
 ```bash
+# Verificar variables
+coolify exec app -- env | grep DB_
+
+# Probar conexión
 coolify exec app -- mysql -h $DB_HOST -u $DB_USER -p$DB_PASSWORD -e "SHOW DATABASES;"
 ```
 
-### Error: "Trusted host settings"
+### Error: "File not found" en rutas
 
-Agrega la variable de entorno:
+Verifica la configuración de Nginx:
 
 ```bash
-DRUPAL_TRUSTED_HOST_PATTERNS=^tu-dominio\.com$,^www\.tu-dominio\.com$
+coolify exec app -- cat /etc/nginx/nginx.conf
+coolify exec app -- env | grep NIXPACKS
 ```
 
-O edita `settings.local.php` y agrega tu dominio manualmente.
+Debe mostrar:
+```
+NIXPACKS_PHP_ROOT_DIR=/app/web
+NIXPACKS_PHP_FALLBACK_PATH=/index.php
+```
 
 ### Error: "Cannot write to files directory"
 
 ```bash
 coolify exec app -- chmod -R 775 /app/web/sites/default/files
-coolify exec app -- chown -R www-data:www-data /app/web/sites/default/files
 ```
 
-### Ver Logs en Tiempo Real:
+### Ver Logs:
 
 ```bash
+# Logs de aplicación
 coolify logs app --follow
+
+# Logs de Nginx
+coolify exec app -- tail -f /var/log/nginx/access.log
+coolify exec app -- tail -f /var/log/nginx/error.log
 ```
-
-## 📊 Estructura del Proyecto
-
-```
-/app/                          # Directorio de trabajo en Coolify
-├── composer.json              # ✅ Composer install se ejecuta aquí
-├── composer.lock
-├── vendor/                    # ✅ Dependencias instaladas
-├── web/                       # ✅ Drupal se sirve desde aquí
-│   ├── index.php
-│   ├── core/
-│   ├── modules/
-│   ├── themes/
-│   └── sites/
-│       └── default/
-│           ├── settings.php   # ✅ Carga settings.local.php
-│           ├── settings.local.php  # ✅ Configuración de Coolify
-│           └── files/         # ✅ Archivos subidos
-└── config/
-    └── sync/                  # ✅ Configuración exportada
-```
-
-## 🎯 Checklist Final
-
-- [ ] Commit y push de los cambios
-- [ ] Variables de entorno configuradas en Coolify
-- [ ] Base de datos creada y conectada
-- [ ] Redeploy ejecutado
-- [ ] Logs verificados (composer install ejecutado)
-- [ ] Base de datos importada
-- [ ] Sitio accesible en el navegador
-- [ ] Caché limpiada
-- [ ] Actualizaciones de BD ejecutadas (si es necesario)
 
 ## 🔐 Seguridad en Producción
 
-### 1. Proteger settings.php y settings.local.php:
+### 1. Proteger archivos de configuración:
 
 ```bash
 coolify exec app -- chmod 444 /app/web/sites/default/settings.php
@@ -238,13 +190,11 @@ coolify exec app -- chmod 444 /app/web/sites/default/settings.local.php
 
 ### 2. Configurar HTTPS:
 
-Coolify maneja automáticamente SSL con Let's Encrypt. Solo asegúrate de:
-- Configurar tu dominio correctamente
-- Habilitar "Force HTTPS" en Coolify
+Coolify maneja SSL automáticamente. Asegúrate de:
+- Configurar tu dominio
+- Habilitar "Force HTTPS"
 
-### 3. Configurar Trusted Host Patterns:
-
-Agrega la variable de entorno con tu dominio real:
+### 3. Trusted Host Patterns:
 
 ```bash
 DRUPAL_TRUSTED_HOST_PATTERNS=^aldibier\.com$,^www\.aldibier\.com$
@@ -256,24 +206,69 @@ DRUPAL_TRUSTED_HOST_PATTERNS=^aldibier\.com$,^www\.aldibier\.com$
 coolify exec app -- /app/vendor/bin/drush pm:uninstall devel webprofiler -y
 ```
 
-## 📚 Documentación Adicional
+## 🔄 Mantenimiento
 
-- `README-COOLIFY.md` - Guía completa de despliegue
-- `SOLUCION_VENDOR_FALTANTE.md` - Troubleshooting detallado
-- `nixpacks.toml` - Configuración de Nixpacks
-- `settings.local.php` - Configuración de Drupal para Coolify
+### Actualizar Drupal:
 
-## 🆘 Soporte
+```bash
+coolify exec app -- bash
+composer update drupal/core* --with-all-dependencies
+vendor/bin/drush updatedb -y
+vendor/bin/drush cr
+vendor/bin/drush config:export -y
+```
 
-Si tienes problemas:
+### Backup:
 
-1. Revisa los logs de Coolify
-2. Verifica las variables de entorno
-3. Lee `SOLUCION_VENDOR_FALTANTE.md` para troubleshooting
-4. Si nada funciona, cambia a Dockerfile (más confiable)
+```bash
+# Base de datos
+coolify exec app -- /app/vendor/bin/drush sql:dump --gzip --result-file=/tmp/backup.sql
+
+# Archivos
+coolify exec app -- tar -czf /tmp/files-backup.tar.gz /app/web/sites/default/files
+```
+
+## 📊 Estructura del Proyecto
+
+```
+/app/
+├── composer.json              # Composer install aquí
+├── vendor/                    # Dependencias
+├── nixpacks.toml             # Config Nixpacks
+├── nginx.template.conf       # Config Nginx
+└── web/                      # Nginx root
+    ├── index.php             # Router Drupal
+    ├── core/
+    ├── modules/
+    ├── themes/
+    └── sites/
+        └── default/
+            ├── settings.php
+            ├── settings.local.php
+            └── files/
+```
+
+## 🎯 Checklist Final
+
+- [ ] Commit y push
+- [ ] Repositorio conectado en Coolify
+- [ ] Base Directory = `/`
+- [ ] Variables de entorno configuradas
+- [ ] Base de datos creada
+- [ ] Despliegue ejecutado
+- [ ] Logs verificados
+- [ ] Base de datos importada
+- [ ] Sitio accesible
+- [ ] SSL habilitado
+- [ ] Trusted host patterns configurados
+- [ ] Permisos de archivos correctos
+
+## 📚 Documentación
+
+- **`README-COOLIFY.md`** - Guía de despliegue
+- **`NIXPACKS_NGINX_PHPFPM.md`** - Detalles técnicos
+- **`ACCION_INMEDIATA.md`** - Guía rápida
 
 ---
 
-**¡Todo está listo para desplegar!** 🎉
-
-Haz commit, push, configura las variables de entorno y redeploy.
+**¡Todo listo para producción!** 🎉
